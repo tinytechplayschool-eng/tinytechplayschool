@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { PageHero } from "@/components/PageHero";
 import { AboutSection } from "@/components/sections/AboutSection";
-import { motion } from "motion/react";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -13,13 +12,6 @@ export const Route = createFileRoute("/about")({
   }),
   component: AboutPage,
 });
-
-const teachers = [
-  { name: "Ms. Anjali", role: "Head of School", years: "15+ years", color: "bg-soft-blue" },
-  { name: "Ms. Priya", role: "Montessori Lead", years: "10 years", color: "bg-soft-pink" },
-  { name: "Ms. Kavita", role: "Junior KG Teacher", years: "8 years", color: "bg-soft-yellow" },
-  { name: "Ms. Reena", role: "Activity Coordinator", years: "6 years", color: "bg-soft-green" },
-];
 
 function AboutPage() {
   return (
@@ -61,34 +53,6 @@ function AboutPage() {
                 <div className="text-xs text-muted-foreground">Founder & Principal</div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-soft-purple py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-purple text-white text-xs font-bold mb-4">OUR TEACHERS</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold">Loving, trained, trusted</h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {teachers.map((t, i) => (
-              <motion.div
-                key={t.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className={`${t.color} rounded-3xl p-6 text-center shadow-card hover:-translate-y-1 transition-transform`}
-              >
-                <div className="mx-auto h-20 w-20 rounded-full bg-white grid place-items-center font-extrabold text-2xl mb-3">
-                  {t.name.split(" ")[1]?.[0] ?? "T"}
-                </div>
-                <div className="font-bold">{t.name}</div>
-                <div className="text-sm text-foreground/70">{t.role}</div>
-                <div className="text-xs text-muted-foreground mt-1">{t.years}</div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

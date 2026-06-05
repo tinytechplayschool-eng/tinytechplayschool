@@ -8,7 +8,6 @@ import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
 import { ActivitiesSection } from "@/components/sections/ActivitiesSection";
 import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
 import { GallerySection } from "@/components/sections/GallerySection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { AdmissionStepsSection } from "@/components/sections/AdmissionStepsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
@@ -35,7 +34,6 @@ function Home() {
       <ActivitiesSection />
       <WhyChooseUsSection />
       <GallerySection preview />
-      <TestimonialsSection />
       <AdmissionStepsSection />
       <ContactSection />
     </PageLayout>
