@@ -69,7 +69,7 @@ export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps
               Govt. of India Approved Diploma Courses
             </h3>
             <p className="text-white/90 text-sm leading-relaxed">
-              We offer government-approved <strong>Advanced Diploma in Montessori Teacher Training</strong> and <strong>Advanced Diploma in Montessori and Primary Education</strong>. Build a rewarding career in education.
+              We offer government-approved <strong>Advanced Diploma in Montessori Teacher Training</strong> and <strong>Advanced Diploma in Primary and Pre-primary Education</strong>. Build a rewarding career in education.
             </p>
           </div>
           <div className="shrink-0 flex flex-col sm:flex-row gap-3 w-full md:w-auto">

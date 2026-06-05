@@ -105,14 +105,14 @@ function ProgramsPage() {
               </div>
               <div>
                 <span className="text-4xl mb-4 block">👩‍🏫</span>
-                <h3 className="text-2xl font-extrabold mb-3 text-brand-purple">Advanced Diploma in Montessori and Primary Education</h3>
+                <h3 className="text-2xl font-extrabold mb-3 text-brand-purple">Advanced Diploma in Primary and Pre-primary Education</h3>
                 <p className="text-foreground/80 mb-6 text-sm leading-relaxed">
-                  An advanced course bridging the gap between Montessori principles and formal primary school pedagogy. Perfect for teaching children from preschool up to primary grade levels.
+                  An advanced course covering the pedagogy and curriculum of both pre-primary and primary education. Perfect for teaching children from preschool up to primary grade levels.
                 </p>
                 <div className="space-y-2 mb-8">
                   {[
                     "Approved by Government of India",
-                    "Covers Montessori method & primary school curriculum",
+                    "Covers pre-primary & primary school curriculum",
                     "Lesson planning & teaching methodology guidelines",
                     "Classroom organization & child guidance techniques",
                     "High-demand certification for nursery & primary teachers"
