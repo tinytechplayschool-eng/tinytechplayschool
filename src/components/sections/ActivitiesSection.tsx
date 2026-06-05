@@ -1,14 +1,14 @@
 import { motion } from "motion/react";
 
 const activities = [
-  { emoji: "🎋", name: "Silambam", color: "bg-soft-green" },
+  { emoji: "🤺", name: "Silambam", color: "bg-soft-green" },
   { emoji: "🥋", name: "Karate", color: "bg-soft-pink" },
   { emoji: "🎨", name: "Drawing", color: "bg-soft-blue" },
   { emoji: "🔤", name: "Phonics", color: "bg-soft-orange" },
   { emoji: "✍️", name: "Handwriting", color: "bg-soft-purple" },
   { emoji: "🧮", name: "Abacus", color: "bg-soft-yellow" },
-  { emoji: "💃", name: "Western Dance", color: "bg-soft-pink" },
-  { emoji: "🩰", name: "Bharathanatiyam", color: "bg-soft-purple" },
+  { emoji: "🪩", name: "Western Dance", color: "bg-soft-pink" },
+  { emoji: "💃", name: "Bharathanatiyam", color: "bg-soft-purple" },
   { emoji: "🎤", name: "Vocal Music", color: "bg-soft-yellow" },
   { emoji: "🧘", name: "Yoga", color: "bg-soft-blue" },
   { emoji: "📖", name: "Story Telling", color: "bg-soft-orange" },
