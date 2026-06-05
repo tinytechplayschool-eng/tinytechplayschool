@@ -15,7 +15,11 @@ const programs = [
   { name: "Day Care", age: "1.5 – 6 yrs", color: "bg-brand-green", soft: "bg-soft-green", img: daycare, desc: "Safe extended care with meals, nap-time and engaging activities." },
 ];
 
-export function ProgramsSection() {
+interface ProgramsSectionProps {
+  isProgramsPage?: boolean;
+}
+
+export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps) {
   return (
     <section className="bg-soft-purple py-20" id="programs">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -42,8 +46,8 @@ export function ProgramsSection() {
               <div className={`p-5 ${p.soft}`}>
                 <h3 className="font-extrabold text-xl mb-1">{p.name}</h3>
                 <p className="text-sm text-foreground/70 mb-4">{p.desc}</p>
-                <Link to="/admissions" className={`inline-flex items-center gap-1 text-sm font-bold text-foreground hover:gap-2 transition-all`}>
-                  Enquire Now <ArrowRight className="h-4 w-4" />
+                <Link to={isProgramsPage ? "/admissions" : "/programs"} className={`inline-flex items-center gap-1 text-sm font-bold text-foreground hover:gap-2 transition-all`}>
+                  {isProgramsPage ? "Enquire Now" : "Learn More"} <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </motion.div>

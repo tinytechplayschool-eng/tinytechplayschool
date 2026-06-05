@@ -34,7 +34,7 @@ function ProgramsPage() {
         title="A joyful program for every age"
         subtitle="From toddlers to confident kindergartners — we have a path designed for them."
       />
-      <ProgramsSection />
+      <ProgramsSection isProgramsPage={true} />
 
       <section className="bg-card py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-6">
