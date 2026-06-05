@@ -62,21 +62,42 @@ export function ContactSection() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            onSubmit={(e) => { e.preventDefault(); setSent(true); }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              const name = formData.get("name") as string;
+              const phone = formData.get("phone") as string;
+              const email = formData.get("email") as string;
+              const age = formData.get("age") as string;
+              const message = formData.get("message") as string;
+
+              const text = `Hi Tiny Tech Play school, I'd like to submit an enquiry:
+*Name:* ${name || "N/A"}
+*Phone:* ${phone || "N/A"}
+*Email:* ${email || "N/A"}
+*Child's Age:* ${age || "N/A"}
+*Message:* ${message || "N/A"}`;
+
+              const whatsappUrl = `https://wa.me/918124378478?text=${encodeURIComponent(text)}`;
+              window.open(whatsappUrl, "_blank");
+              setSent(true);
+            }}
             className="bg-card rounded-3xl p-6 shadow-card space-y-4"
           >
             <div className="grid sm:grid-cols-2 gap-4">
-              <Field label="Your Name" name="name" placeholder="Jane Doe" />
-              <Field label="Phone" name="phone" placeholder="+91 81243 78478" />
+              <Field label="Your Name" name="name" placeholder="Jane Doe" required />
+              <Field label="Phone" name="phone" placeholder="+91 81243 78478" required />
             </div>
-            <Field label="Email" name="email" type="email" placeholder="you@email.com" />
-            <Field label="Child's Age" name="age" placeholder="e.g. 3 years" />
+            <Field label="Email" name="email" type="email" placeholder="you@email.com" required />
+            <Field label="Child's Age" name="age" placeholder="e.g. 3 years" required />
             <div>
               <label className="block text-sm font-semibold mb-1.5">Message</label>
               <textarea
+                name="message"
                 rows={4}
                 placeholder="Tell us a little about your child or what you'd like to know."
                 className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                required
               />
             </div>
             <button
@@ -84,7 +105,7 @@ export function ContactSection() {
               disabled={sent}
               className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-hero text-white px-6 py-3 font-bold shadow-pop hover:scale-[1.02] transition-transform disabled:opacity-70"
             >
-              {sent ? "Message sent! We'll reach out soon 💌" : (<><Send className="h-4 w-4" /> Send Enquiry</>)}
+              {sent ? "Opening WhatsApp... 💌" : (<><Send className="h-4 w-4" /> Send Enquiry via WhatsApp</>)}
             </button>
           </motion.form>
         </div>
@@ -93,7 +114,7 @@ export function ContactSection() {
   );
 }
 
-function Field({ label, name, type = "text", placeholder }: { label: string; name: string; type?: string; placeholder?: string }) {
+function Field({ label, name, type = "text", placeholder, ...props }: { label: string; name: string; type?: string; placeholder?: string; [key: string]: any }) {
   return (
     <div>
       <label htmlFor={name} className="block text-sm font-semibold mb-1.5">{label}</label>
@@ -103,6 +124,7 @@ function Field({ label, name, type = "text", placeholder }: { label: string; nam
         type={type}
         placeholder={placeholder}
         className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+        {...props}
       />
     </div>
   );
