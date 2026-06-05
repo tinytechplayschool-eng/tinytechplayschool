@@ -53,35 +53,6 @@ export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps
             </motion.div>
           ))}
         </div>
-
-        {/* Teacher Training Academy Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 bg-gradient-fresh text-white rounded-3xl p-8 md:p-12 shadow-card flex flex-col md:flex-row gap-8 items-center justify-between border border-white/20"
-        >
-          <div className="space-y-3 max-w-2xl text-center md:text-left">
-            <span className="inline-block px-3 py-1 rounded-full bg-white/25 text-xs font-bold uppercase tracking-wider">
-              Teacher Training Academy
-            </span>
-            <h3 className="text-2xl md:text-3xl font-extrabold">
-              Govt. of India Approved Diploma Courses
-            </h3>
-            <p className="text-white/90 text-sm leading-relaxed">
-              We offer government-approved <strong>Advanced Diploma in Montessori Teacher Training</strong> and <strong>Advanced Diploma in Primary and Pre-primary Education</strong>. Build a rewarding career in education.
-            </p>
-          </div>
-          <div className="shrink-0 flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-            <Link
-              to="/programs"
-              hash="teacher-training"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-brand-blue hover:text-brand-blue/90 px-6 py-3 font-bold text-sm shadow-pop hover:scale-105 transition-all text-center"
-            >
-              View Diploma Courses <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
