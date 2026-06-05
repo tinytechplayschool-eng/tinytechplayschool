@@ -10,10 +10,10 @@ export function Footer() {
             <div className="h-9 w-9 rounded-xl bg-gradient-hero grid place-items-center">
               <Sparkles className="h-5 w-5 text-white" />
             </div>
-            <span className="font-display text-xl font-bold">BrightSparks</span>
+            <span className="font-display text-xl font-bold">Tiny Tech</span>
           </div>
           <p className="text-sm opacity-80">
-            A happy place to learn, play & grow. Nurturing curious little minds since 2010.
+            A happy place to learn, play & grow. Nurturing curious little minds and training educators.
           </p>
           <div className="flex gap-3 mt-4">
             <a href="#" aria-label="Facebook" className="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-brand-blue transition-colors"><Facebook className="h-4 w-4" /></a>
@@ -36,9 +36,15 @@ export function Footer() {
         <div>
           <h4 className="font-bold mb-4 text-brand-yellow">Contact</h4>
           <ul className="space-y-3 text-sm opacity-90">
-            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> +91 98765 43210</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /> hello@brightsparks.school</li>
-            <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /> 12 Garden Road, Sunrise Avenue, Bengaluru 560001</li>
+            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> +91-08124378478 (GUDUVANCHERY)</li>
+            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /> padmasanmugam@gmail.com</li>
+            <li className="flex gap-2">
+              <MapPin className="h-4 w-4 mt-0.5 shrink-0" /> 
+              <span>
+                24, Rajaji Street, N.G.O Colony, Guduvancheri, Tamil Nadu, India<br />
+                <span className="text-xs text-brand-yellow font-semibold">Near to railway station and bus stand</span>
+              </span>
+            </li>
           </ul>
         </div>
 
@@ -54,7 +60,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 text-xs opacity-70 flex flex-wrap justify-between gap-2">
-          <p>© {new Date().getFullYear()} BrightSparks Playschool & Montessori. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Tiny Tech Play school. All rights reserved.</p>
           <p>Made with ❤️ for little learners.</p>
         </div>
       </div>

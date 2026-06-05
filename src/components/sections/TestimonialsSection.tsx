@@ -3,11 +3,11 @@ import { Star } from "lucide-react";
 
 const reviews = [
   { name: "Priya Sharma", child: "Mother of Aarav (Nursery)", rating: 5, color: "bg-soft-blue", avatar: "PS",
-    text: "BrightSparks feels like a second home for Aarav. The teachers know him, love him, and his growth in just six months has been incredible." },
+    text: "Tiny Tech feels like a second home for Aarav. The teachers know him, love him, and his growth in just six months has been incredible." },
   { name: "Rahul Verma", child: "Father of Anya (Jr. KG)", rating: 5, color: "bg-soft-yellow", avatar: "RV",
     text: "Beautifully organized, safe, and full of joy. Anya runs to school every morning — that says it all." },
   { name: "Meera Iyer", child: "Mother of Vihaan (Play Group)", rating: 5, color: "bg-soft-green", avatar: "MI",
-    text: "Daily updates, lovely activities and warm staff. We trust BrightSparks completely with our little one." },
+    text: "Daily updates, lovely activities and warm staff. We trust Tiny Tech completely with our little one." },
 ];
 
 export function TestimonialsSection() {

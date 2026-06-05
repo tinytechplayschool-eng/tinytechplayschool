@@ -22,7 +22,7 @@ export function Navbar() {
             <Sparkles className="h-5 w-5 text-white" />
           </div>
           <span className="font-display text-xl font-bold">
-            Bright<span className="text-brand-orange">Sparks</span>
+            Tiny<span className="text-brand-orange">Tech</span>
           </span>
         </Link>
 

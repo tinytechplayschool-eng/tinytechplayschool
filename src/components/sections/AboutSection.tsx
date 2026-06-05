@@ -16,7 +16,7 @@ export function AboutSection() {
             A bright start for every little learner
           </h2>
           <p className="text-foreground/80 mb-4">
-            At BrightSparks, we believe every child is born curious. Our playful,
+            At Tiny Tech, we believe every child is born curious. Our playful,
             Montessori-inspired environment turns that curiosity into a lifelong
             love of learning — through hands-on activities, stories, songs and lots
             of laughter.

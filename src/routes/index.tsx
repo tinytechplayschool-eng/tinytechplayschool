@@ -15,9 +15,9 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BrightSparks Playschool & Montessori — Learn, Play & Grow" },
+      { title: "Tiny Tech Play school — Learn, Play & Grow" },
       { name: "description", content: "Vibrant playschool & Montessori with experienced teachers, safe facilities, day care and transportation. Admissions open." },
-      { property: "og:title", content: "BrightSparks Playschool & Montessori" },
+      { property: "og:title", content: "Tiny Tech Play school" },
       { property: "og:description", content: "A happy place to learn, play & grow." },
     ],
   }),

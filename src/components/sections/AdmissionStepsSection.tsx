@@ -5,7 +5,7 @@ const steps = [
   { icon: MessageCircleQuestion, title: "Enquiry", desc: "Fill the form or call us — we'll share program details.", color: "bg-brand-blue" },
   { icon: School, title: "School Visit", desc: "Tour the campus and meet our teachers.", color: "bg-brand-orange" },
   { icon: FileText, title: "Registration", desc: "Submit the form and documents.", color: "bg-brand-purple" },
-  { icon: PartyPopper, title: "Admission", desc: "Welcome to the BrightSparks family!", color: "bg-brand-green" },
+  { icon: PartyPopper, title: "Admission", desc: "Welcome to the Tiny Tech family!", color: "bg-brand-green" },
 ];
 
 export function AdmissionStepsSection() {

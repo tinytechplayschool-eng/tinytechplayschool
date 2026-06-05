@@ -26,7 +26,7 @@ export function GallerySection() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-pink text-white text-xs font-bold mb-4">GALLERY</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Little moments, big smiles</h2>
-          <p className="text-foreground/70">A peek into the colorful days at BrightSparks.</p>
+          <p className="text-foreground/70">A peek into the colorful days at Tiny Tech.</p>
         </div>
 
         <div className="columns-2 md:columns-3 gap-4 [column-fill:_balance]">

@@ -22,17 +22,19 @@ export function ContactSection() {
           >
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: Phone, label: "Call us", value: "+91 98765 43210", color: "bg-brand-green" },
-                { icon: Mail, label: "Email", value: "hello@brightsparks.school", color: "bg-brand-orange" },
-                { icon: MapPin, label: "Visit", value: "12 Garden Road, Bengaluru 560001", color: "bg-brand-pink" },
-                { icon: Phone, label: "WhatsApp", value: "+91 98765 43210", color: "bg-brand-purple" },
+                { icon: Phone, label: "Call us", value: "+91-08124378478", color: "bg-brand-green" },
+                { icon: Mail, label: "Email", value: "padmasanmugam@gmail.com", color: "bg-brand-orange" },
+                { icon: MapPin, label: "Visit", value: "24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)", color: "bg-brand-pink" },
+                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple" },
               ].map((c) => (
-                <div key={c.label} className="bg-card rounded-2xl p-4 shadow-card">
-                  <div className={`h-10 w-10 rounded-xl ${c.color} text-white grid place-items-center mb-2`}>
-                    <c.icon className="h-5 w-5" />
+                <div key={c.label} className="bg-card rounded-2xl p-4 shadow-card flex flex-col justify-between">
+                  <div>
+                    <div className={`h-10 w-10 rounded-xl ${c.color} text-white grid place-items-center mb-2`}>
+                      <c.icon className="h-5 w-5" />
+                    </div>
+                    <div className="text-xs text-muted-foreground">{c.label}</div>
                   </div>
-                  <div className="text-xs text-muted-foreground">{c.label}</div>
-                  <div className="font-bold text-sm">{c.value}</div>
+                  <div className="font-bold text-xs mt-1 leading-snug">{c.value}</div>
                 </div>
               ))}
             </div>
@@ -59,7 +61,7 @@ export function ContactSection() {
           >
             <div className="grid sm:grid-cols-2 gap-4">
               <Field label="Your Name" name="name" placeholder="Jane Doe" />
-              <Field label="Phone" name="phone" placeholder="+91 98765 43210" />
+              <Field label="Phone" name="phone" placeholder="+91 81243 78478" />
             </div>
             <Field label="Email" name="email" type="email" placeholder="you@email.com" />
             <Field label="Child's Age" name="age" placeholder="e.g. 3 years" />

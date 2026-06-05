@@ -16,7 +16,7 @@ export function WhyChooseUsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-orange text-white text-xs font-bold mb-4">WHY CHOOSE US</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Six big reasons parents trust BrightSparks</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Six big reasons parents trust Tiny Tech</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
