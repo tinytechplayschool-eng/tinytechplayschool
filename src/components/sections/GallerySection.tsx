@@ -1,64 +1,202 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { X } from "lucide-react";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
+import { X, Play, Image as ImageIcon, Video, Award, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
-const images = [
-  { src: g1, alt: "Children playing music", h: "h-72" },
-  { src: g2, alt: "Art class painting", h: "h-96" },
-  { src: g3, alt: "Outdoor playground fun", h: "h-64" },
-  { src: g4, alt: "School celebration day", h: "h-80" },
-  { src: g5, alt: "Yoga session", h: "h-64" },
-  { src: g6, alt: "Storytelling circle", h: "h-96" },
+// Real student photos from the public/WhatsApp photos directory
+const whatsappPhotos = [
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.48.05%20AM%20(1).jpeg", alt: "Active Learning & Play", h: "h-72" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.48.05%20AM.jpeg", alt: "Fine Motor Skills Activity", h: "h-80" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.48.06%20AM%20(1).jpeg", alt: "Montessori Classroom Setup", h: "h-96" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.48.06%20AM%20(2).jpeg", alt: "Interactive Group Play", h: "h-64" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.48.06%20AM.jpeg", alt: "Sensory Development Toys", h: "h-80" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.48.07%20AM.jpeg", alt: "Montessori Practical Life Activities", h: "h-72" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.12%20AM%20(1).jpeg", alt: "Student Drawing & Crafting", h: "h-64" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.12%20AM.jpeg", alt: "Creative Arts Session", h: "h-96" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.13%20AM%20(1).jpeg", alt: "Group Circle Fun", h: "h-80" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.13%20AM.jpeg", alt: "Montessori Practical Exercises", h: "h-72" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.14%20AM%20(1).jpeg", alt: "Kids Hands-on Science", h: "h-64" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.14%20AM.jpeg", alt: "Alphabet Blocks & Spelling", h: "h-80" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.15%20AM%20(1).jpeg", alt: "Fine Motor Activity with Pegs", h: "h-96" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.15%20AM.jpeg", alt: "Creative Clay Sculpting", h: "h-72" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.16%20AM%20(1).jpeg", alt: "Storybook Reading Time", h: "h-64" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.16%20AM.jpeg", alt: "Learning Shapes & Colors", h: "h-80" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.17%20AM%20(1).jpeg", alt: "Classroom Board Work", h: "h-96" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.17%20AM%20(2).jpeg", alt: "Sharing & Socialization", h: "h-72" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.17%20AM.jpeg", alt: "Building Blocks Tower", h: "h-80" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Image%202026-06-01%20at%2010.49.18%20AM.jpeg", alt: "Morning Exercises & Yoga", h: "h-64" },
 ];
 
-export function GallerySection() {
-  const [lightbox, setLightbox] = useState<number | null>(null);
+// Real student videos from the public/WhatsApp videos directory
+const whatsappVideos = [
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.20%20AM%20(1).mp4", title: "Joyful Play & Interactions" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.20%20AM.mp4", title: "Circle Time & Activity Sessions" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.21%20AM%20(1).mp4", title: "Classroom Fun Activities" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.21%20AM%20(2).mp4", title: "Student Movement & Play" },
+  { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.21%20AM.mp4", title: "Montessori Practical Exercises" },
+];
+
+// Banners/Posters from public/banner directory
+const schoolBanners = [
+  { src: "/banner/Banner%20Padma%20(1)-1.png", alt: "Admissions & Teacher Training Academy Poster", desc: "Montessori Teacher Training and Advanced Montessori & Primary Education approved by Govt. of India." },
+  { src: "/banner/6x4%20-%201%20copy%20(2).jpg.jpeg", alt: "Tiny Tech Play school Admissions Banner", desc: "Admissions open for Playgroup, Nursery, LKG, UKG, and Day Care. Contact +91-08124378478." },
+  { src: "/banner/WhatsApp%20Image%202026-06-01%20at%2010.48.07%20AM%20(1).jpeg", alt: "Special Event and Programs Poster", desc: "Details of extracurricular activities and specialized programs." },
+];
+
+export function GallerySection({ preview = false }: { preview?: boolean }) {
+  const [activeTab, setActiveTab] = useState<"photos" | "videos" | "banners">("photos");
+  const [lightbox, setLightbox] = useState<{ type: "photo" | "banner"; src: string; alt: string } | null>(null);
+
+  // If preview mode, show only first 6 photos
+  const displayPhotos = preview ? whatsappPhotos.slice(0, 6) : whatsappPhotos;
 
   return (
-    <section className="bg-soft-pink py-20">
+    <section className="bg-soft-pink py-20" id="gallery">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-pink text-white text-xs font-bold mb-4">GALLERY</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Little moments, big smiles</h2>
-          <p className="text-foreground/70">A peek into the colorful days at Tiny Tech.</p>
+          <p className="text-foreground/70">A real look into our classrooms, activities, events, and training modules at Tiny Tech.</p>
         </div>
 
-        <div className="columns-2 md:columns-3 gap-4 [column-fill:_balance]">
-          {images.map((img, i) => (
-            <motion.button
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.06 }}
-              onClick={() => setLightbox(i)}
-              className={`mb-4 block w-full overflow-hidden rounded-2xl shadow-card group ${img.h} relative break-inside-avoid`}
-            >
-              <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-            </motion.button>
-          ))}
-        </div>
+        {/* Tab Controls (Only shown on full page) */}
+        {!preview && (
+          <div className="flex justify-center gap-2 mb-12 flex-wrap">
+            {[
+              { id: "photos", label: "School Photos", icon: ImageIcon, color: "bg-brand-pink" },
+              { id: "videos", label: "Activity Videos", icon: Video, color: "bg-brand-purple" },
+              { id: "banners", label: "Posters & Banners", icon: Award, color: "bg-brand-orange" },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id as any)}
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm shadow-sm transition-all border border-border ${
+                  activeTab === tab.id
+                    ? `${tab.color} text-white border-transparent scale-105`
+                    : "bg-card text-foreground hover:bg-muted"
+                }`}
+              >
+                <tab.icon className="h-4 w-4" />
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        )}
 
+        {/* Tab Contents */}
+        {activeTab === "photos" && (
+          <div>
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-4 [column-fill:_balance]">
+              {displayPhotos.map((img, i) => (
+                <motion.button
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  onClick={() => setLightbox({ type: "photo", src: img.src, alt: img.alt })}
+                  className={`mb-4 block w-full overflow-hidden rounded-2xl shadow-card group ${img.h} relative break-inside-avoid border border-border`}
+                >
+                  <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span className="text-white text-xs font-bold text-left">{img.alt}</span>
+                  </div>
+                </motion.button>
+              ))}
+            </div>
+
+            {/* View Full Gallery Button for Home Page Preview */}
+            {preview && (
+              <div className="text-center mt-12">
+                <Link
+                  to="/gallery"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-sunshine text-secondary-foreground px-8 py-3.5 font-bold shadow-pop hover:scale-105 transition-transform"
+                >
+                  View Full Gallery (Photos, Videos & Banners) <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === "videos" && !preview && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {whatsappVideos.map((v, i) => (
+              <div key={i} className="bg-card rounded-2xl overflow-hidden shadow-card border border-border flex flex-col">
+                <div className="relative aspect-video bg-black flex items-center justify-center">
+                  <video
+                    src={v.src}
+                    controls
+                    preload="metadata"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-4 bg-soft-purple/30 flex-grow">
+                  <h4 className="font-extrabold text-sm flex items-center gap-2 text-brand-purple">
+                    <Play className="h-4 w-4 fill-brand-purple" /> {v.title}
+                  </h4>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        )}
+
+        {activeTab === "banners" && !preview && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {schoolBanners.map((b, i) => (
+              <div
+                key={i}
+                className="bg-card rounded-3xl overflow-hidden shadow-card border border-border flex flex-col justify-between hover:scale-[1.01] transition-transform"
+              >
+                <button
+                  onClick={() => setLightbox({ type: "banner", src: b.src, alt: b.alt })}
+                  className="w-full overflow-hidden aspect-[4/5] relative bg-muted block group"
+                >
+                  <img src={b.src} alt={b.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity grid place-items-center">
+                    <span className="bg-white/90 text-foreground text-xs font-bold px-4 py-2 rounded-full shadow-md">Click to Zoom</span>
+                  </div>
+                </button>
+                <div className="p-5 bg-soft-orange/30">
+                  <h4 className="font-extrabold text-brand-orange text-md mb-1">{b.alt}</h4>
+                  <p className="text-xs text-foreground/80 leading-relaxed">{b.desc}</p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        )}
+
+        {/* Lightbox Modal */}
         {lightbox !== null && (
           <div
-            className="fixed inset-0 bg-black/85 z-[60] grid place-items-center p-4 animate-fade-in"
+            className="fixed inset-0 bg-black/90 z-[100] grid place-items-center p-4 sm:p-8 animate-fade-in"
             onClick={() => setLightbox(null)}
           >
             <button
               onClick={() => setLightbox(null)}
               aria-label="Close"
-              className="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/10 text-white grid place-items-center hover:bg-white/20"
+              className="absolute top-4 right-4 h-12 w-12 rounded-full bg-white/10 text-white grid place-items-center hover:bg-white/20 transition-colors z-[110]"
             >
-              <X className="h-5 w-5" />
+              <X className="h-6 w-6" />
             </button>
-            <img src={images[lightbox].src} alt={images[lightbox].alt} className="max-h-[90vh] max-w-full rounded-2xl shadow-pop" />
+            <div className="relative max-h-[85vh] max-w-[95vw] sm:max-w-[80vw] overflow-auto rounded-2xl shadow-pop flex flex-col items-center justify-center bg-transparent">
+              <img
+                src={lightbox.src}
+                alt={lightbox.alt}
+                className="max-h-[75vh] w-auto max-w-full object-contain rounded-2xl"
+              />
+              <div className="mt-4 text-center max-w-xl text-white">
+                <h3 className="font-bold text-lg">{lightbox.alt}</h3>
+              </div>
+            </div>
           </div>
         )}
       </div>

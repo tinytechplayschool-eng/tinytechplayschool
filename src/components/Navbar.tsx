@@ -18,9 +18,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="h-9 w-9 rounded-xl bg-gradient-hero grid place-items-center shadow-pop group-hover:scale-110 transition-transform">
-            <Sparkles className="h-5 w-5 text-white" />
-          </div>
+          <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover shadow-pop group-hover:scale-110 transition-transform" />
           <span className="font-display text-xl font-bold">
             Tiny<span className="text-brand-orange">Tech</span>
           </span>

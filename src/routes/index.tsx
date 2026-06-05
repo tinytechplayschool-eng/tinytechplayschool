@@ -34,7 +34,7 @@ function Home() {
       <FacilitiesSection />
       <ActivitiesSection />
       <WhyChooseUsSection />
-      <GallerySection />
+      <GallerySection preview />
       <TestimonialsSection />
       <AdmissionStepsSection />
       <ContactSection />

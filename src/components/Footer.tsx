@@ -7,9 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="h-9 w-9 rounded-xl bg-gradient-hero grid place-items-center">
-              <Sparkles className="h-5 w-5 text-white" />
-            </div>
+            <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover bg-white p-0.5" />
             <span className="font-display text-xl font-bold">Tiny Tech</span>
           </div>
           <p className="text-sm opacity-80">
