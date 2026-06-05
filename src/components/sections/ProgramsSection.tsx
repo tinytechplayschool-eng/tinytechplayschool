@@ -29,12 +29,6 @@ export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps
           <p className="text-foreground/70">From tiny toddlers to confident kindergartners — we have a joyful learning journey for every child.</p>
         </div>
 
-        <div className="mb-8">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-foreground text-brand-yellow font-display text-sm font-bold shadow-sm">
-            For kids:
-          </span>
-        </div>
-
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {programs.map((p, i) => (
             <motion.div

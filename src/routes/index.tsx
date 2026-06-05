@@ -6,6 +6,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { ProgramsSection } from "@/components/sections/ProgramsSection";
 import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
 import { ActivitiesSection } from "@/components/sections/ActivitiesSection";
+import { AfterSchoolSection } from "@/components/sections/AfterSchoolSection";
 import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
 import { GallerySection } from "@/components/sections/GallerySection";
 import { AdmissionStepsSection } from "@/components/sections/AdmissionStepsSection";
@@ -32,6 +33,7 @@ function Home() {
       <ProgramsSection />
       <FacilitiesSection />
       <ActivitiesSection />
+      <AfterSchoolSection />
       <WhyChooseUsSection />
       <GallerySection preview />
       <AdmissionStepsSection />

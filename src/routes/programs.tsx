@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { PageHero } from "@/components/PageHero";
 import { ProgramsSection } from "@/components/sections/ProgramsSection";
+import { AfterSchoolSection } from "@/components/sections/AfterSchoolSection";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
@@ -38,11 +39,6 @@ function ProgramsPage() {
 
       <section className="bg-card py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-6">
-          <div className="mb-6">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-foreground text-brand-yellow font-display text-sm font-bold shadow-sm">
-              For kids:
-            </span>
-          </div>
           {details.map((p, i) => (
             <div key={p.name} className={`${p.soft} rounded-3xl p-7 grid md:grid-cols-3 gap-6 items-start`}>
               <div className="md:col-span-1">
@@ -62,6 +58,8 @@ function ProgramsPage() {
           ))}
         </div>
       </section>
+
+      <AfterSchoolSection />
 
       {/* Teacher Training Section */}
       <section className="bg-soft-blue py-20 relative overflow-hidden" id="teacher-training">
