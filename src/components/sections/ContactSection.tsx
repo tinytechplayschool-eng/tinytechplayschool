@@ -22,20 +22,26 @@ export function ContactSection() {
           >
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: Phone, label: "Call us", value: "+91-08124378478", color: "bg-brand-green" },
-                { icon: Mail, label: "Email", value: "padmasanmugam@gmail.com", color: "bg-brand-orange" },
-                { icon: MapPin, label: "Visit", value: "24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)", color: "bg-brand-pink" },
-                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple" },
+                { icon: Phone, label: "Call us", value: "+91-08124378478", color: "bg-brand-green", href: "tel:+9108124378478" },
+                { icon: Mail, label: "Email", value: "padmasanmugam@gmail.com", color: "bg-brand-orange", href: "mailto:padmasanmugam@gmail.com" },
+                { icon: MapPin, label: "Visit", value: "24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)", color: "bg-brand-pink", href: "https://www.google.com/maps/dir/?api=1&destination=Tiny+Tech+play+school+Guduvancheri" },
+                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple", href: "https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Play%20school%2C%20I%27d%20like%20to%20know%20more%20about%20admissions." },
               ].map((c) => (
-                <div key={c.label} className="bg-card rounded-2xl p-4 shadow-card flex flex-col justify-between">
+                <a
+                  key={c.label}
+                  href={c.href}
+                  target={c.href.startsWith("http") ? "_blank" : undefined}
+                  rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="bg-card rounded-2xl p-4 shadow-card flex flex-col justify-between hover:scale-[1.03] hover:shadow-pop transition-all border border-transparent hover:border-border cursor-pointer text-left"
+                >
                   <div>
                     <div className={`h-10 w-10 rounded-xl ${c.color} text-white grid place-items-center mb-2`}>
                       <c.icon className="h-5 w-5" />
                     </div>
                     <div className="text-xs text-muted-foreground">{c.label}</div>
                   </div>
-                  <div className="font-bold text-xs mt-1 leading-snug">{c.value}</div>
-                </div>
+                  <div className="font-bold text-xs mt-2 leading-snug text-foreground">{c.value}</div>
+                </a>
               ))}
             </div>
             <div className="rounded-2xl overflow-hidden shadow-card h-64">

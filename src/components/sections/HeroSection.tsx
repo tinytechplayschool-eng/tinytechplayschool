@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import heroImg from "@/assets/hero-children.jpg";
-import { Calendar, Sparkles } from "lucide-react";
+import { Calendar, Sparkles, MessageCircle } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -38,6 +38,14 @@ export function HeroSection() {
             >
               <Sparkles className="h-4 w-4" /> Enquire Now
             </Link>
+            <a
+              href="https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Play%20school%2C%20I%27d%20like%20to%20know%20more%20about%20admissions."
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#22c35e] text-white px-6 py-3 font-bold shadow-pop hover:scale-105 transition-all"
+            >
+              <MessageCircle className="h-4 w-4 fill-white" /> Chat on WhatsApp
+            </a>
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur px-6 py-3 font-bold border border-white/30 transition-colors"

@@ -34,14 +34,25 @@ export function Footer() {
         <div>
           <h4 className="font-bold mb-4 text-brand-yellow">Contact</h4>
           <ul className="space-y-3 text-sm opacity-90">
-            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> +91-08124378478 (GUDUVANCHERY)</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /> padmasanmugam@gmail.com</li>
             <li className="flex gap-2">
-              <MapPin className="h-4 w-4 mt-0.5 shrink-0" /> 
-              <span>
+              <Phone className="h-4 w-4 mt-0.5 shrink-0" />
+              <a href="tel:+9108124378478" className="hover:text-brand-yellow transition-colors">+91-08124378478 (GUDUVANCHERY)</a>
+            </li>
+            <li className="flex gap-2">
+              <Mail className="h-4 w-4 mt-0.5 shrink-0" />
+              <a href="mailto:padmasanmugam@gmail.com" className="hover:text-brand-yellow transition-colors">padmasanmugam@gmail.com</a>
+            </li>
+            <li className="flex gap-2">
+              <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Tiny+Tech+play+school+Guduvancheri"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-yellow transition-colors"
+              >
                 24, Rajaji Street, N.G.O Colony, Guduvancheri, Tamil Nadu, India<br />
                 <span className="text-xs text-brand-yellow font-semibold">Near to railway station and bus stand</span>
-              </span>
+              </a>
             </li>
           </ul>
         </div>
