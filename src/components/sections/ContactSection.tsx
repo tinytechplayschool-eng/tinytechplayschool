@@ -41,7 +41,7 @@ export function ContactSection() {
             <div className="rounded-2xl overflow-hidden shadow-card h-64">
               <iframe
                 title="School location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15552.4!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzUnNDAuNiJF!5e0!3m2!1sen!2sin!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.017231479134!2d80.05371257403064!3d12.842162917705021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f733118958a1%3A0xc9183d5c39a79f59!2sTiny%20Tech%20play%20school!5e0!3m2!1sen!2sin!4v1780665823067!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
