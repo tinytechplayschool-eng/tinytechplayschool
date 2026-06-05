@@ -86,7 +86,7 @@ export function GallerySection({ preview = false }: { preview?: boolean }) {
         {/* Tab Contents */}
         {activeTab === "photos" && (
           <div>
-            <div className="columns-2 md:columns-3 lg:columns-4 gap-4 [column-fill:_balance]">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {displayPhotos.map((img, i) => (
                 <motion.button
                   key={i}
@@ -95,10 +95,10 @@ export function GallerySection({ preview = false }: { preview?: boolean }) {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.05 }}
                   onClick={() => setLightbox({ type: "photo", src: img.src, alt: img.alt })}
-                  className={`mb-4 block w-full overflow-hidden rounded-2xl shadow-card group ${img.h} relative break-inside-avoid border border-border`}
+                  className="w-full overflow-hidden aspect-[4/3] rounded-2xl shadow-card group relative border border-border bg-card"
                 >
                   <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <span className="text-white text-xs font-bold text-left">{img.alt}</span>
                   </div>
                 </motion.button>
@@ -126,18 +126,19 @@ export function GallerySection({ preview = false }: { preview?: boolean }) {
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {whatsappVideos.map((v, i) => (
-              <div key={i} className="bg-card rounded-2xl overflow-hidden shadow-card border border-border flex flex-col">
+              <div key={i} className="bg-card rounded-2xl overflow-hidden shadow-card border border-border flex flex-col justify-between">
                 <div className="relative aspect-video bg-black flex items-center justify-center">
                   <video
                     src={v.src}
                     controls
                     preload="metadata"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-black"
                   />
                 </div>
-                <div className="p-4 bg-soft-purple/30 flex-grow">
+                <div className="p-4 bg-soft-purple/30 flex-grow flex items-center">
                   <h4 className="font-extrabold text-sm flex items-center gap-2 text-brand-purple">
-                    <Play className="h-4 w-4 fill-brand-purple" /> {v.title}
+                    <Play className="h-4 w-4 fill-brand-purple shrink-0" /> 
+                    <span>{v.title}</span>
                   </h4>
                 </div>
               </div>
@@ -158,16 +159,18 @@ export function GallerySection({ preview = false }: { preview?: boolean }) {
               >
                 <button
                   onClick={() => setLightbox({ type: "banner", src: b.src, alt: b.alt })}
-                  className="w-full overflow-hidden aspect-[4/5] relative bg-muted block group"
+                  className="w-full overflow-hidden aspect-square relative bg-white flex items-center justify-center p-4 block group border-b border-border"
                 >
-                  <img src={b.src} alt={b.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity grid place-items-center">
-                    <span className="bg-white/90 text-foreground text-xs font-bold px-4 py-2 rounded-full shadow-md">Click to Zoom</span>
+                  <img src={b.src} alt={b.alt} className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity grid place-items-center">
+                    <span className="bg-white/95 text-foreground text-xs font-bold px-4 py-2 rounded-full shadow-md">Click to Zoom</span>
                   </div>
                 </button>
-                <div className="p-5 bg-soft-orange/30">
-                  <h4 className="font-extrabold text-brand-orange text-md mb-1">{b.alt}</h4>
-                  <p className="text-xs text-foreground/80 leading-relaxed">{b.desc}</p>
+                <div className="p-5 bg-soft-orange/30 flex-grow flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-extrabold text-brand-orange text-md mb-1">{b.alt}</h4>
+                    <p className="text-xs text-foreground/80 leading-relaxed">{b.desc}</p>
+                  </div>
                 </div>
               </div>
             ))}
