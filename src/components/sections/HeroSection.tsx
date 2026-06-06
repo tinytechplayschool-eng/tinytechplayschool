@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import heroImg from "@/assets/hero-children.jpg";
-import { Calendar, Sparkles, MessageCircle } from "lucide-react";
+import { Calendar, Sparkles, MessageCircle, MapPin, Phone } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -19,9 +19,16 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-brand-yellow text-secondary-foreground text-base sm:text-lg font-extrabold shadow-pop animate-pulse mb-6 border border-white/20">
-            <Sparkles className="h-5 w-5 fill-secondary-foreground" /> Admissions Open 2026–27
-          </span>
+          <div className="flex flex-col gap-3 mb-6">
+            <span className="block text-brand-yellow text-2xl sm:text-3xl font-extrabold tracking-wide uppercase drop-shadow-sm">
+              Tiny Tech Pre School
+            </span>
+            <div>
+              <span className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-pink text-white text-sm font-extrabold shadow-pop animate-pulse border border-white/15">
+                <Sparkles className="h-4 w-4 fill-white" /> Admissions Open 2026–27
+              </span>
+            </div>
+          </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
             A Happy Place to <span className="text-brand-yellow">Learn</span>,{" "}
             <span className="text-brand-orange">Play</span> &{" "}
@@ -32,7 +39,7 @@ export function HeroSection() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              to="/admissions"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-sunshine px-6 py-3 font-bold text-secondary-foreground shadow-pop hover:scale-105 transition-transform"
             >
               <Sparkles className="h-4 w-4" /> Enquire Now
@@ -106,6 +113,42 @@ export function HeroSection() {
             </div>
           </motion.div>
         </motion.div>
+      </div>
+
+      {/* Contact & Location Strip */}
+      <div className="relative z-20 border-t border-white/10 bg-black/20 backdrop-blur-md py-5">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-3 text-white">
+            <div className="h-10 w-10 rounded-full bg-brand-yellow/20 flex items-center justify-center shrink-0 border border-brand-yellow/30">
+              <MapPin className="h-5 w-5 text-brand-yellow" />
+            </div>
+            <div>
+              <div className="text-xs text-brand-yellow font-bold uppercase tracking-wider">Our Location</div>
+              <p className="text-sm font-semibold text-white/95">
+                24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex items-center gap-3 text-white">
+              <div className="h-10 w-10 rounded-full bg-brand-green/20 flex items-center justify-center shrink-0 border border-brand-green/30">
+                <Phone className="h-5 w-5 text-brand-green" />
+              </div>
+              <div>
+                <div className="text-xs text-brand-green font-bold uppercase tracking-wider">Helpline</div>
+                <a href="tel:+9108124378478" className="text-sm font-extrabold text-white/95 hover:text-brand-yellow transition-colors">
+                  +91-08124378478
+                </a>
+              </div>
+            </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-sunshine text-secondary-foreground px-6 py-2.5 font-extrabold text-sm shadow-pop hover:scale-105 transition-transform"
+            >
+              <Sparkles className="h-4 w-4 fill-secondary-foreground animate-pulse" /> Admissions Enquiry
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

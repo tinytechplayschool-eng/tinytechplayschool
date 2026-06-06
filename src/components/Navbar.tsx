@@ -54,7 +54,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Link
-            to="/admissions"
+            to="/contact"
             className="inline-flex items-center justify-center rounded-full bg-gradient-sunshine px-5 py-2.5 text-sm font-bold text-secondary-foreground shadow-pop hover:scale-105 transition-transform"
           >
             Enquire Now
@@ -84,7 +84,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              to="/admissions"
+              to="/contact"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-full bg-gradient-sunshine px-5 py-2.5 font-bold text-secondary-foreground"
             >

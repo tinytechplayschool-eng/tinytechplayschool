@@ -46,7 +46,7 @@ export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps
               <div className={`p-5 ${p.soft}`}>
                 <h3 className="font-extrabold text-xl mb-1">{p.name}</h3>
                 <p className="text-sm text-foreground/70 mb-4">{p.desc}</p>
-                <Link to={isProgramsPage ? "/admissions" : "/programs"} className={`inline-flex items-center gap-1 text-sm font-bold text-foreground hover:gap-2 transition-all`}>
+                <Link to={isProgramsPage ? "/contact" : "/programs"} className={`inline-flex items-center gap-1 text-sm font-bold text-foreground hover:gap-2 transition-all`}>
                   {isProgramsPage ? "Enquire Now" : "Learn More"} <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
