@@ -22,7 +22,7 @@ function ContactPage() {
         subtitle="Book a tour, ask a question, or just say hi — we're here."
         gradient="bg-gradient-fresh"
       />
-      <ContactSection />
+      <ContactSection isContactPage={true} />
     </PageLayout>
   );
 }

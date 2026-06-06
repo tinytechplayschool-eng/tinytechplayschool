@@ -1,9 +1,104 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
-export function ContactSection() {
+interface ContactSectionProps {
+  isContactPage?: boolean;
+}
+
+export function ContactSection({ isContactPage = false }: ContactSectionProps) {
   const [sent, setSent] = useState(false);
+
+  if (!isContactPage) {
+    return (
+      <section className="bg-soft-blue py-20 relative overflow-hidden" id="contact">
+        {/* Decorative blobs */}
+        <div className="absolute top-10 -left-20 h-72 w-72 rounded-full bg-brand-pink/5 blur-2xl pointer-events-none" />
+        <div className="absolute bottom-0 -right-20 h-72 w-72 rounded-full bg-brand-blue/5 blur-2xl pointer-events-none" />
+
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <span className="inline-block px-3 py-1 rounded-full bg-brand-blue text-white text-xs font-bold mb-4 uppercase tracking-wider">
+            Get in Touch
+          </span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-foreground">
+            Ready to join Tiny Tech Pre School?
+          </h2>
+          <p className="text-foreground/70 text-base max-w-2xl mx-auto mb-10">
+            Have questions about admissions, fees, or our curriculum? Get in touch with us today. Fill out our online enquiry form or connect with us directly.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+            {/* Quick Contact Info */}
+            <div className="bg-card rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-brand-orange uppercase tracking-wider block mb-2">School Location & Contacts</span>
+                <h3 className="font-extrabold text-2xl mb-4 text-foreground">Tiny Tech Pre School</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="h-8 w-8 rounded-full bg-soft-pink text-brand-pink grid place-items-center shrink-0 mt-0.5">
+                      <MapPin className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs text-muted-foreground">Address</div>
+                      <div className="text-sm font-semibold text-foreground">24, Rajaji Street, N.G.O Colony, Guduvancheri, Tamil Nadu, India</div>
+                      <div className="text-xs text-muted-foreground mt-0.5">(Near Railway Station and Bus Stand)</div>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="h-8 w-8 rounded-full bg-soft-green text-brand-green grid place-items-center shrink-0 mt-0.5">
+                      <Phone className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs text-muted-foreground">Admissions Helpline</div>
+                      <a href="tel:+9108124378478" className="text-sm font-semibold text-foreground hover:text-brand-blue hover:underline">+91-08124378478</a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="h-8 w-8 rounded-full bg-soft-orange text-brand-orange grid place-items-center shrink-0 mt-0.5">
+                      <Mail className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs text-muted-foreground">Email Address</div>
+                      <a href="mailto:padmasanmugam@gmail.com" className="text-sm font-semibold text-foreground hover:text-brand-blue hover:underline">padmasanmugam@gmail.com</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Quick Action Enquiry Box */}
+            <div className="bg-gradient-fresh text-white rounded-3xl p-8 shadow-card flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-white/80 uppercase tracking-wider block mb-2">Quick Enquiry</span>
+                <h3 className="font-extrabold text-2xl mb-3">Enquire Online</h3>
+                <p className="text-white/95 text-sm leading-relaxed mb-6">
+                  Fill out our quick online enquiry form on our contact page to request admission details, fee structures, or a campus tour.
+                </p>
+              </div>
+              <div className="space-y-3">
+                <Link
+                  to="/contact"
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white text-brand-blue hover:bg-white/90 py-3.5 px-6 font-bold text-sm shadow-pop transition-transform hover:scale-[1.01]"
+                >
+                  <Send className="h-4 w-4 text-brand-blue" /> Open Enquiry Form
+                </Link>
+                <a
+                  href="https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Pre%20School%2C%20I%27d%20like%20to%20know%20more%20about%20admissions."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#22c35e] text-white py-3.5 px-6 font-bold text-sm shadow-pop transition-transform hover:scale-[1.01]"
+                >
+                  <Phone className="h-4 w-4 fill-white shrink-0" /> Enquiry on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="bg-soft-blue py-20" id="contact">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -25,7 +120,7 @@ export function ContactSection() {
                 { icon: Phone, label: "Call us", value: "+91-08124378478", color: "bg-brand-green", href: "tel:+9108124378478" },
                 { icon: Mail, label: "Email", value: "padmasanmugam@gmail.com", color: "bg-brand-orange", href: "mailto:padmasanmugam@gmail.com" },
                 { icon: MapPin, label: "Visit", value: "24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)", color: "bg-brand-pink", href: "https://www.google.com/maps/dir/?api=1&destination=Tiny+Tech+play+school+Guduvancheri" },
-                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple", href: "https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Play%20school%2C%20I%27d%20like%20to%20know%20more%20about%20admissions." },
+                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple", href: "https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Pre%20School%2C%20I%27d%20like%20to%20know%20more%20about%20admissions." },
               ].map((c) => (
                 <a
                   key={c.label}
