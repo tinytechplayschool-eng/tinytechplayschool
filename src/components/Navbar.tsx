@@ -33,8 +33,8 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover shadow-pop group-hover:scale-110 transition-transform" />
-          <span className="font-display text-xl font-bold">
-            Tiny<span className="text-brand-orange">Tech</span>
+          <span className="font-display text-lg sm:text-xl font-bold whitespace-nowrap">
+            Tiny Tech <span className="text-brand-orange">Pre School</span>
           </span>
         </Link>
 
