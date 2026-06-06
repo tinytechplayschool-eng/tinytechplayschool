@@ -85,18 +85,6 @@ export function HeroSection() {
               className="w-full h-auto object-cover"
             />
           </div>
-          {/* Floating badges */}
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 5, repeat: Infinity }}
-            className="absolute -bottom-4 -right-4 bg-white text-foreground rounded-2xl shadow-card px-4 py-3 flex items-center gap-2"
-          >
-            <div className="h-10 w-10 rounded-full bg-soft-orange grid place-items-center text-xl">⭐</div>
-            <div>
-              <div className="text-xs text-muted-foreground">Rated</div>
-              <div className="font-bold text-sm">4.9 / 5 by parents</div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
 
