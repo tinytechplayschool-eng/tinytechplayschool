@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Sparkles, MapPin, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { to: "/", label: "Home" },
@@ -16,20 +16,6 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
-      {/* Contact Info Top Bar */}
-      <div className="bg-brand-purple text-white py-2 px-4 text-xs sm:text-sm font-semibold flex flex-wrap justify-between items-center gap-2 border-b border-white/10">
-        <div className="flex items-center gap-2 mx-auto sm:mx-0 text-center sm:text-left">
-          <MapPin className="h-3.5 w-3.5 text-brand-yellow shrink-0" />
-          <span>24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)</span>
-        </div>
-        <div className="flex items-center gap-4 mx-auto sm:mx-0">
-          <a href="tel:+9108124378478" className="flex items-center gap-1.5 hover:text-brand-yellow transition-colors">
-            <Phone className="h-3.5 w-3.5 text-brand-yellow shrink-0" />
-            <span>+91-08124378478</span>
-          </a>
-        </div>
-      </div>
-
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover shadow-pop group-hover:scale-110 transition-transform shrink-0" />
