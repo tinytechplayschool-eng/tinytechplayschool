@@ -17,7 +17,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
         <div className="absolute top-10 -left-20 h-72 w-72 rounded-full bg-brand-pink/5 blur-2xl pointer-events-none" />
         <div className="absolute bottom-0 -right-20 h-72 w-72 rounded-full bg-brand-blue/5 blur-2xl pointer-events-none" />
 
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-blue text-white text-xs font-bold mb-4 uppercase tracking-wider">
             Get in Touch
           </span>
@@ -28,7 +28,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
             Have questions about admissions, fees, or our curriculum? Get in touch with us today. Fill out our online enquiry form or connect with us directly.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+          <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
             {/* Quick Contact Info */}
             <div className="bg-card rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between">
               <div>
@@ -64,6 +64,23 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
                     </div>
                   </li>
                 </ul>
+              </div>
+            </div>
+
+            {/* Embedded Google Map */}
+            <div className="bg-card rounded-3xl p-4 border border-border shadow-sm flex flex-col min-h-[300px] lg:min-h-0">
+              <div className="w-full h-full min-h-[260px] lg:min-h-0 rounded-2xl overflow-hidden shadow-sm relative grow">
+                <iframe
+                  title="School location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.017231479134!2d80.05371257403064!3d12.842162917705021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f733118958a1%3A0xc9183d5c39a79f59!2sTiny%20Tech%20play%20school!5e0!3m2!1sen!2sin!4v1780665823067!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  className="absolute inset-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
 
