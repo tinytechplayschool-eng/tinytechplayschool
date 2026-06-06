@@ -12,45 +12,25 @@ export function HeroSection() {
       <div className="absolute bottom-24 left-1/4 h-8 w-8 rounded-lg bg-brand-green rotate-12 animate-float-slow" />
       <div className="absolute top-1/3 right-10 h-10 w-10 rounded-full bg-white/30 animate-float-slow" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-[44%_56%] gap-8 items-center">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-[44%_56%] gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex flex-col gap-3 mb-6">
-            <span className="block text-brand-yellow text-2xl sm:text-3xl font-extrabold tracking-wide uppercase drop-shadow-sm">
-              Tiny Tech Pre School
+          <div className="mb-6">
+            <span className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-brand-pink text-white text-lg sm:text-xl font-black shadow-pop animate-pulse border-2 border-white/20">
+              <Sparkles className="h-5 w-5 fill-white animate-pulse" /> Admissions Open 2026–27
             </span>
-            <div>
-              <span className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-brand-pink text-white text-lg sm:text-xl font-black shadow-pop animate-pulse border-2 border-white/20">
-                <Sparkles className="h-5 w-5 fill-white animate-pulse" /> Admissions Open 2026–27
-              </span>
-            </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
             A Happy Place to <span className="text-brand-yellow">Learn</span>,{" "}
             <span className="text-brand-orange">Play</span> &{" "}
             <span className="text-brand-green">Grow</span>
           </h1>
 
-          <p className="text-xl sm:text-2xl font-bold text-brand-yellow mb-5 drop-shadow-sm">
-            CBSE Curriculum — Montessori Method of Teaching
-          </p>
-
-          <div className="flex flex-wrap gap-2.5 mb-6">
-            {["DAY CARE", "PLAY GROUP", "PRE KG", "LKG", "UKG"].map((program) => (
-              <span
-                key={program}
-                className="inline-block px-4 py-1.5 rounded-xl bg-white/95 text-brand-purple text-xs sm:text-sm font-extrabold tracking-wider shadow-sm border border-white/20"
-              >
-                {program}
-              </span>
-            ))}
-          </div>
-
-          <p className="text-base sm:text-lg opacity-95 max-w-xl mb-8">
-            Providing quality early childhood education in a safe, caring, and inspiring environment.
+          <p className="text-lg opacity-95 max-w-xl mb-8">
+            Following CBSE curriculum with Montessori method of teaching. Providing quality early childhood education in a safe, caring, and inspiring environment.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -75,7 +55,7 @@ export function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.4 }}
-          className="relative transition-transform duration-300 lg:-ml-8"
+          className="relative transition-transform duration-300"
         >
           <div className="relative rounded-[2rem] overflow-hidden shadow-pop ring-8 ring-white/20">
             <img
