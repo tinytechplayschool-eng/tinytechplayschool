@@ -59,19 +59,6 @@ export function HeroSection() {
               <Calendar className="h-4 w-4" /> Book a School Tour
             </Link>
           </div>
-
-          <div className="mt-10 grid grid-cols-3 gap-4 max-w-md">
-            {[
-              { n: "15+", l: "Years of Joy" },
-              { n: "500+", l: "Happy Kids" },
-              { n: "30+", l: "Trained Teachers" },
-            ].map((s) => (
-              <div key={s.l} className="rounded-2xl bg-white/15 backdrop-blur p-3 text-center border border-white/20">
-                <div className="text-2xl font-extrabold text-brand-yellow">{s.n}</div>
-                <div className="text-xs opacity-90">{s.l}</div>
-              </div>
-            ))}
-          </div>
         </motion.div>
 
         <motion.div
