@@ -5,7 +5,7 @@ const features = [
   { icon: Award, title: "Experienced Teachers", desc: "Loving, trained early-childhood educators.", color: "bg-brand-blue" },
   { icon: Smile, title: "Child-Friendly Environment", desc: "Bright, joyful spaces kids love.", color: "bg-brand-pink" },
   { icon: Shield, title: "Safety & Security", desc: "CCTV, secure entry, trained staff.", color: "bg-brand-green" },
-  { icon: Sparkles, title: "Montessori Learning", desc: "Hands-on, self-paced discovery.", color: "bg-brand-purple" },
+  { icon: Sparkles, title: "CBSE & Montessori", desc: "CBSE curriculum integrated with Montessori teaching.", color: "bg-brand-purple" },
   { icon: MessageCircle, title: "Parent Communication", desc: "Daily updates and open dialogue.", color: "bg-brand-orange" },
   { icon: UserCheck, title: "Individual Attention", desc: "Small class sizes, big care.", color: "bg-brand-yellow" },
 ];

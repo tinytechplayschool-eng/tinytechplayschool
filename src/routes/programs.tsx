@@ -33,7 +33,7 @@ function ProgramsPage() {
       <PageHero
         eyebrow="PROGRAMS"
         title="A joyful program for every age"
-        subtitle="From toddlers to confident kindergartners — we have a path designed for them."
+        subtitle="Following a CBSE curriculum integrated with the Montessori method of teaching, designed for toddlers to confident kindergartners."
       />
       <ProgramsSection isProgramsPage={true} />
 

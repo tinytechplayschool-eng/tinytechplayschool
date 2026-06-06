@@ -28,8 +28,7 @@ export function HeroSection() {
             <span className="text-brand-green">Grow</span>
           </h1>
           <p className="text-lg opacity-95 max-w-xl mb-8">
-            Providing quality early childhood education in a safe, caring and
-            inspiring environment — where every little spark shines bright.
+            Following CBSE curriculum with Montessori method of teaching. Providing quality early childhood education in a safe, caring, and inspiring environment.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -92,7 +91,7 @@ export function HeroSection() {
             <div className="h-10 w-10 rounded-full bg-soft-green grid place-items-center text-xl">🌱</div>
             <div>
               <div className="text-xs text-muted-foreground">Curriculum</div>
-              <div className="font-bold text-sm">Montessori + Play</div>
+              <div className="font-bold text-sm">CBSE + Montessori</div>
             </div>
           </motion.div>
           <motion.div
