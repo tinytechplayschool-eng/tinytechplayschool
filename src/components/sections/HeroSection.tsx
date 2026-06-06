@@ -5,15 +5,26 @@ import { Sparkles, MessageCircle, MapPin, Phone } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-hero text-white">
-      {/* Decorative blobs */}
-      <div className="absolute top-10 -left-20 h-72 w-72 rounded-full bg-brand-yellow/40 blur-2xl animate-blob" />
-      <div className="absolute bottom-0 -right-20 h-80 w-80 rounded-full bg-brand-pink/40 blur-2xl animate-blob" />
-      <div className="absolute top-20 right-1/3 h-12 w-12 rounded-full bg-brand-orange animate-float-slow" />
-      <div className="absolute bottom-24 left-1/4 h-8 w-8 rounded-lg bg-brand-green rotate-12 animate-float-slow" />
-      <div className="absolute top-1/3 right-10 h-10 w-10 rounded-full bg-white/30 animate-float-slow" />
+    <section className="relative overflow-hidden bg-brand-purple text-white">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0 select-none pointer-events-none opacity-30">
+        <img
+          src="/banner/6x4%20-%201%20copy%20(2).jpg.jpeg"
+          alt="Tiny Tech School Banner Background"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Color overlay to blend with branding */}
+        <div className="absolute inset-0 bg-brand-purple/60 mix-blend-multiply" />
+      </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      {/* Decorative blobs */}
+      <div className="absolute top-10 -left-20 h-72 w-72 rounded-full bg-brand-yellow/30 blur-2xl animate-blob" />
+      <div className="absolute bottom-0 -right-20 h-80 w-80 rounded-full bg-brand-pink/30 blur-2xl animate-blob" />
+      <div className="absolute top-20 right-1/3 h-12 w-12 rounded-full bg-brand-orange/40 animate-float-slow" />
+      <div className="absolute bottom-24 left-1/4 h-8 w-8 rounded-lg bg-brand-green/30 rotate-12 animate-float-slow" />
+      <div className="absolute top-1/3 right-10 h-10 w-10 rounded-full bg-white/20 animate-float-slow" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
