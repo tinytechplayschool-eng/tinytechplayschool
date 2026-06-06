@@ -13,7 +13,7 @@ export function HeroSection() {
       <div className="absolute bottom-24 left-1/4 h-8 w-8 rounded-lg bg-brand-green rotate-12 animate-float-slow" />
       <div className="absolute top-1/3 right-10 h-10 w-10 rounded-full bg-white/30 animate-float-slow" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-6 lg:pt-24 lg:pb-10 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ export function HeroSection() {
       </div>
 
       {/* Contact & Location Strip */}
-      <div className="relative z-20 border-t border-white/10 bg-black/20 backdrop-blur-md py-5">
+      <div className="relative z-20 border-t border-white/10 bg-black/20 backdrop-blur-md py-5 -mt-6 lg:-mt-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3 text-white">
             <div className="h-10 w-10 rounded-full bg-brand-yellow/20 flex items-center justify-center shrink-0 border border-brand-yellow/30">
