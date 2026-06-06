@@ -14,6 +14,24 @@ export function HeroSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-[48%_52%] gap-12 items-center">
         <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.01 }}
+          transition={{ duration: 0.4 }}
+          className="relative transition-transform duration-300"
+        >
+          <div className="relative rounded-[2rem] overflow-hidden shadow-pop ring-8 ring-white/20">
+            <img
+              src="/banner/6x4 - 1 copy (2).jpg.jpeg"
+              alt="Happy children learning and playing at Tiny Tech Pre School"
+              width={1536}
+              height={1152}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -47,24 +65,6 @@ export function HeroSection() {
             >
               <MessageCircle className="h-4 w-4 fill-white" /> Chat on WhatsApp
             </a>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          whileHover={{ scale: 1.01 }}
-          transition={{ duration: 0.4 }}
-          className="relative transition-transform duration-300"
-        >
-          <div className="relative rounded-[2rem] overflow-hidden shadow-pop ring-8 ring-white/20">
-            <img
-              src="/banner/6x4 - 1 copy (2).jpg.jpeg"
-              alt="Happy children learning and playing at Tiny Tech Pre School"
-              width={1536}
-              height={1152}
-              className="w-full h-auto object-cover"
-            />
           </div>
         </motion.div>
       </div>
