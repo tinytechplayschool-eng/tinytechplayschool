@@ -19,8 +19,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 text-sm font-semibold backdrop-blur mb-5">
-            <Sparkles className="h-4 w-4" /> Admissions Open 2026–27
+          <span className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-brand-yellow text-secondary-foreground text-base sm:text-lg font-extrabold shadow-pop animate-pulse mb-6 border border-white/20">
+            <Sparkles className="h-5 w-5 fill-secondary-foreground" /> Admissions Open 2026–27
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
             A Happy Place to <span className="text-brand-yellow">Learn</span>,{" "}
