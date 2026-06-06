@@ -29,13 +29,29 @@ export function HeroSection() {
               </span>
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-4">
             A Happy Place to <span className="text-brand-yellow">Learn</span>,{" "}
             <span className="text-brand-orange">Play</span> &{" "}
             <span className="text-brand-green">Grow</span>
           </h1>
-          <p className="text-lg opacity-95 max-w-xl mb-8">
-            Following CBSE curriculum with Montessori method of teaching. Providing quality early childhood education in a safe, caring, and inspiring environment.
+
+          <p className="text-xl sm:text-2xl font-bold text-brand-yellow mb-5 drop-shadow-sm">
+            CBSE Curriculum — Montessori Method of Teaching
+          </p>
+
+          <div className="flex flex-wrap gap-2.5 mb-6">
+            {["DAY CARE", "PLAY GROUP", "PRE KG", "LKG", "UKG"].map((program) => (
+              <span
+                key={program}
+                className="inline-block px-4 py-1.5 rounded-xl bg-white/95 text-brand-purple text-xs sm:text-sm font-extrabold tracking-wider shadow-sm border border-white/20"
+              >
+                {program}
+              </span>
+            ))}
+          </div>
+
+          <p className="text-base sm:text-lg opacity-95 max-w-xl mb-8">
+            Providing quality early childhood education in a safe, caring, and inspiring environment.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
