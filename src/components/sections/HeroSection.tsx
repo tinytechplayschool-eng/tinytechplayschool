@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import heroImg from "@/assets/hero-children.jpg";
-import { Calendar, Sparkles, MessageCircle, MapPin, Phone } from "lucide-react";
+import { Sparkles, MessageCircle, MapPin, Phone } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -68,12 +68,6 @@ export function HeroSection() {
             >
               <MessageCircle className="h-4 w-4 fill-white" /> Chat on WhatsApp
             </a>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur px-6 py-3 font-bold border border-white/30 transition-colors"
-            >
-              <Calendar className="h-4 w-4" /> Book a School Tour
-            </Link>
           </div>
         </motion.div>
 
