@@ -24,8 +24,8 @@ export function HeroSection() {
               Tiny Tech Pre School
             </span>
             <div>
-              <span className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-pink text-white text-sm font-extrabold shadow-pop animate-pulse border border-white/15">
-                <Sparkles className="h-4 w-4 fill-white" /> Admissions Open 2026–27
+              <span className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-brand-pink text-white text-lg sm:text-xl font-black shadow-pop animate-pulse border-2 border-white/20">
+                <Sparkles className="h-5 w-5 fill-white animate-pulse" /> Admissions Open 2026–27
               </span>
             </div>
           </div>
