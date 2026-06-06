@@ -73,9 +73,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Tiny Tech Play school" },
+      { title: "Tiny Tech Pre School" },
       { name: "description", content: "A happy place to learn, play & grow. Quality early childhood education in a safe, caring environment." },
-      { property: "og:title", content: "Tiny Tech Play school" },
+      { property: "og:title", content: "Tiny Tech Pre School" },
       { property: "og:description", content: "A happy place to learn, play & grow." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

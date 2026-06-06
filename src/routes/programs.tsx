@@ -7,7 +7,7 @@ import { AfterSchoolSection } from "@/components/sections/AfterSchoolSection";
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Programs — Tiny Tech Play school" },
+      { title: "Programs — Tiny Tech Pre School" },
       { name: "description", content: "Play Group, Nursery, Junior KG, Senior KG, Day Care, and Govt. of India approved Advanced Montessori Teacher Training Diploma courses." },
     ],
   }),

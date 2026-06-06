@@ -69,7 +69,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 text-xs opacity-70 flex flex-wrap justify-between gap-2">
-          <p>© {new Date().getFullYear()} Tiny Tech Play school. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Tiny Tech Pre School. All rights reserved.</p>
           <p>Made with ❤️ for little learners.</p>
         </div>
       </div>

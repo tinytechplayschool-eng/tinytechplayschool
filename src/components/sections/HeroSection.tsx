@@ -76,7 +76,7 @@ export function HeroSection() {
           <div className="relative rounded-[2rem] overflow-hidden shadow-pop ring-8 ring-white/20">
             <img
               src={heroImg}
-              alt="Happy children learning and playing at Tiny Tech Play school"
+              alt="Happy children learning and playing at Tiny Tech Pre School"
               width={1536}
               height={1152}
               className="w-full h-auto object-cover"

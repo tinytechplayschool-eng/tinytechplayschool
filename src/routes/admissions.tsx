@@ -7,8 +7,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const Route = createFileRoute("/admissions")({
   head: () => ({
     meta: [
-      { title: "Admissions — Tiny Tech Play school" },
-      { name: "description", content: "Eligibility, documents, fees and admission details for Tiny Tech Play school." },
+      { title: "Admissions — Tiny Tech Pre School" },
+      { name: "description", content: "Eligibility, documents, fees and admission details for Tiny Tech Pre School." },
     ],
   }),
   component: AdmissionsPage,

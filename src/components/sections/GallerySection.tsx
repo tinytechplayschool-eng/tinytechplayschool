@@ -39,7 +39,7 @@ const whatsappVideos = [
 // Banners/Posters from public/banner directory
 const schoolBanners = [
   { src: "/banner/Banner%20Padma%20(1)-1.png", alt: "Admissions & Teacher Training Academy Poster", desc: "Montessori Teacher Training and Advanced Montessori & Primary Education approved by Govt. of India." },
-  { src: "/banner/6x4%20-%201%20copy%20(2).jpg.jpeg", alt: "Tiny Tech Play school Admissions Banner", desc: "Admissions open for Playgroup, Nursery, LKG, UKG, and Day Care. Contact +91-08124378478." },
+  { src: "/banner/6x4%20-%201%20copy%20(2).jpg.jpeg", alt: "Tiny Tech Pre School Admissions Banner", desc: "Admissions open for Playgroup, Nursery, LKG, UKG, and Day Care. Contact +91-08124378478." },
   { src: "/banner/pamplet%20design%20ppt%20(3).png", alt: "Tiny Tech Academy Pamphlet", desc: "Special evening classes including Olympiad coaching, Abacus, Handwriting, Phonics, Spoken English, and Tuitions." },
   { src: "/banner/WhatsApp%20Image%202026-06-01%20at%2010.48.07%20AM%20(1).jpeg", alt: "Special Event and Programs Poster", desc: "Details of extracurricular activities and specialized programs." },
 ];

@@ -71,7 +71,7 @@ export function ContactSection() {
               const age = formData.get("age") as string;
               const message = formData.get("message") as string;
 
-              const text = `Hi Tiny Tech Play school, I'd like to submit an enquiry:
+              const text = `Hi Tiny Tech Pre School, I'd like to submit an enquiry:
 *Name:* ${name || "N/A"}
 *Phone:* ${phone || "N/A"}
 *Email:* ${email || "N/A"}
