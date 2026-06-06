@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="absolute bottom-24 left-1/4 h-8 w-8 rounded-lg bg-brand-green rotate-12 animate-float-slow" />
       <div className="absolute top-1/3 right-10 h-10 w-10 rounded-full bg-white/30 animate-float-slow" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-[44%_56%] gap-12 items-center">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-[48%_52%] gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          whileHover={{ scale: 1.03 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.4 }}
           className="relative transition-transform duration-300"
         >
