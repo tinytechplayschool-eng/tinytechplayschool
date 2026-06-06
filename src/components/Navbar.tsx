@@ -32,10 +32,15 @@ export function Navbar() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover shadow-pop group-hover:scale-110 transition-transform" />
-          <span className="font-display text-lg sm:text-xl font-bold whitespace-nowrap">
-            Tiny Tech <span className="text-brand-orange">Pre School</span>
-          </span>
+          <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover shadow-pop group-hover:scale-110 transition-transform shrink-0" />
+          <div className="flex flex-col md:flex-row md:items-baseline gap-0 md:gap-1.5">
+            <span className="font-display text-lg sm:text-xl font-bold whitespace-nowrap">
+              Tiny Tech <span className="text-brand-orange">Pre School</span>
+            </span>
+            <span className="text-[10px] sm:text-xs text-muted-foreground font-bold whitespace-nowrap">
+              @ Guduvancheri (Near Railway Station)
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
