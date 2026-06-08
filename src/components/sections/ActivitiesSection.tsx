@@ -22,7 +22,7 @@ export function ActivitiesSection() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-green text-white text-xs font-bold mb-4">FUN ACTIVITIES</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Learning that feels like play</h2>
-          <p className="text-foreground/70">A week at Tiny Tech is packed with discovery, movement, music and imagination.</p>
+          <p className="text-foreground/70">A week at CSC Tiny Tech is packed with discovery, movement, music, and imagination.</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

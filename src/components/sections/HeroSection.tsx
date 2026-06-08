@@ -23,7 +23,7 @@ export function HeroSection() {
           <div className="relative rounded-[2rem] overflow-hidden shadow-pop ring-8 ring-white/20">
             <img
               src="/banner/6x4 - 1 copy (2).jpg.jpeg"
-              alt="Happy children learning and playing at Tiny Tech Pre School"
+              alt="Happy children learning and playing at CSC Tiny Tech Pre School"
               width={1536}
               height={1152}
               className="w-full h-auto object-cover"
@@ -42,13 +42,11 @@ export function HeroSection() {
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
-            A Happy Place to <span className="text-brand-yellow">Learn</span>,{" "}
-            <span className="text-brand-orange">Play</span> &{" "}
-            <span className="text-brand-green">Grow</span>
+            Play-Based & <span className="text-brand-yellow">Tech-Enabled</span> Early <span className="text-brand-orange">Learning</span>
           </h1>
 
           <p className="text-lg opacity-95 max-w-xl mb-8">
-            Following CBSE curriculum with Montessori method of teaching. Providing quality early childhood education in a safe, caring, and inspiring environment.
+            An innovative, brain-responsive curriculum designed by <strong>IIT Delhi</strong> in association with <strong>CSC Academy</strong>. We leverage smart digital tools to create a playful, NEP 2020 aligned educational experience.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -58,7 +56,7 @@ export function HeroSection() {
               <Sparkles className="h-4 w-4" /> Enquire Now
             </Link>
             <a
-              href="https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Play%20school%2C%20I%27d%20like%20to%20know%20more%20about%20admissions."
+              href="https://wa.me/918124378478?text=Hi%20CSC%20Tiny%20Tech%20Play%20school%2C%20I%27d%20like%20to%20know%20more%20about%20admissions."
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#22c35e] text-white px-6 py-3 font-bold shadow-pop hover:scale-105 transition-all"

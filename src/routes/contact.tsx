@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Tiny Tech Pre School" },
+      { title: "Contact — CSC Tiny Tech Pre School" },
       { name: "description", content: "Call, email, visit or WhatsApp us. Book a school tour anytime." },
     ],
   }),

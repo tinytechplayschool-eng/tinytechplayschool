@@ -8,10 +8,10 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover bg-white p-0.5" />
-            <span className="font-display text-xl font-bold">Tiny Tech</span>
+            <span className="font-display text-xl font-bold">CSC Tiny Tech</span>
           </div>
           <p className="text-sm opacity-80">
-            A happy place to learn, play & grow. Nurturing curious little minds and training educators.
+            An innovative, tech-enabled early childhood education network designed in association with IIT Delhi.
           </p>
           <div className="flex gap-3 mt-4">
             <a href="#" aria-label="Facebook" className="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-brand-blue transition-colors"><Facebook className="h-4 w-4" /></a>
@@ -69,7 +69,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 text-xs opacity-70 flex flex-wrap justify-between gap-2">
-          <p>© {new Date().getFullYear()} Tiny Tech Pre School. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CSC Tiny Tech Pre School. All rights reserved.</p>
           <p>Made with ❤️ for little learners.</p>
         </div>
       </div>

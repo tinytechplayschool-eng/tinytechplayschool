@@ -23,9 +23,7 @@ export function PageHero({
           </p>
         )}
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">{title}</h1>
-        {subtitle && (
-          <p className="max-w-2xl mx-auto text-lg opacity-95">{subtitle}</p>
-        )}
+        {subtitle && <p className="max-w-2xl mx-auto text-lg opacity-95">{subtitle}</p>}
       </div>
     </section>
   );

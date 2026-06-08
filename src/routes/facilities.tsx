@@ -7,7 +7,7 @@ import { ShieldCheck, Camera, HeartPulse, Lock } from "lucide-react";
 export const Route = createFileRoute("/facilities")({
   head: () => ({
     meta: [
-      { title: "Facilities — Tiny Tech Pre School" },
+      { title: "Facilities — CSC Tiny Tech Pre School" },
       { name: "description", content: "Smart classrooms, indoor & outdoor play, library, activity rooms, CCTV, transportation and day care." },
     ],
   }),

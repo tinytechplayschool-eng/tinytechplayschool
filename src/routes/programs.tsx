@@ -7,8 +7,8 @@ import { AfterSchoolSection } from "@/components/sections/AfterSchoolSection";
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Programs — Tiny Tech Pre School" },
-      { name: "description", content: "Play Group, Nursery, Junior KG, Senior KG, Day Care, and Govt. of India approved Advanced Montessori Teacher Training Diploma courses." },
+      { title: "Programs — CSC Tiny Tech Pre School" },
+      { name: "description", content: "Playgroup, Nursery, Kindergarten, Day Care, and Govt. of India approved Montessori and Pre-primary Teacher Training Diploma courses at CSC Tiny Tech Guduvancheri." },
     ],
   }),
   component: ProgramsPage,
@@ -16,13 +16,13 @@ export const Route = createFileRoute("/programs")({
 
 const details = [
   { name: "Play Group", age: "1.5 – 2.5 yrs", soft: "bg-soft-pink", color: "bg-brand-pink",
-    points: ["Gentle separation from parent", "Sensory & messy play", "Songs, rhymes, story circles", "Toilet-training support"] },
+    points: ["IIT Delhi-aligned play framework", "Sensory & messy play activities", "Interactive digital storytelling & puppet shows", "Social interaction & separation transition"] },
   { name: "Nursery", age: "2.5 – 3.5 yrs", soft: "bg-soft-purple", color: "bg-brand-purple",
-    points: ["Montessori practical-life", "Fine motor skills", "Pre-writing & shapes", "Independence & sharing"] },
+    points: ["Brain-responsive learning games", "Introduction to smart digital tools", "Fine motor & cognitive development", "Practical life skills & independence"] },
   { name: "Junior KG", age: "3.5 – 4.5 yrs", soft: "bg-soft-blue", color: "bg-brand-blue",
-    points: ["Phonics & early reading", "Numbers 1–20", "Creative art & craft", "Outdoor sports basics"] },
+    points: ["Phonics & early reading with digital tools", "Numbers, logic & brain puzzles", "IIT Delhi play-based learning methods", "Holistic development (social & physical)"] },
   { name: "Senior KG", age: "4.5 – 5.5 yrs", soft: "bg-soft-orange", color: "bg-brand-orange",
-    points: ["Reading & writing", "Numbers up to 100", "School-readiness skills", "Public speaking & shows"] },
+    points: ["Advanced literacy, writing & numeracy", "Problem-solving & school readiness", "Creative puppet theater & public speaking", "NEP 2020 aligned milestone checks"] },
   { name: "Day Care", age: "1.5 – 6 yrs", soft: "bg-soft-green", color: "bg-brand-green",
     points: ["Safe extended care till 6:30 PM", "Healthy meals & nap-time", "Homework & enrichment", "Live CCTV for parents"] },
 ];
@@ -33,7 +33,7 @@ function ProgramsPage() {
       <PageHero
         eyebrow="PROGRAMS"
         title="A joyful program for every age"
-        subtitle="Following a CBSE curriculum integrated with the Montessori method of teaching, designed for toddlers to confident kindergartners."
+        subtitle="Featuring a play-based, brain-responsive, and tech-enabled curriculum designed by IIT Delhi in association with CSC Academy, aligned with NEP 2020."
       />
       <ProgramsSection isProgramsPage={true} />
 

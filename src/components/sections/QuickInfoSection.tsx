@@ -6,7 +6,7 @@ const items = [
   { icon: Baby, title: "Age Groups", desc: "1.5 – 6 Years", color: "bg-soft-pink text-brand-pink" },
   { icon: Clock, title: "School Timings", desc: "8:30 AM – 1:00 PM", color: "bg-soft-yellow text-brand-orange" },
   { icon: Sun, title: "Day Care", desc: "Till 6:30 PM", color: "bg-soft-orange text-brand-orange" },
-  { icon: GraduationCap, title: "Curriculum", desc: "Montessori Based", color: "bg-soft-purple text-brand-purple" },
+  { icon: GraduationCap, title: "Curriculum", desc: "IIT Delhi & NEP Aligned", color: "bg-soft-purple text-brand-purple" },
 ];
 
 export function QuickInfoSection() {

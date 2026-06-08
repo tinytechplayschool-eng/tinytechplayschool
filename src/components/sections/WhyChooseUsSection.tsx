@@ -5,7 +5,7 @@ const features = [
   { icon: Award, title: "Experienced Teachers", desc: "Loving, trained early-childhood educators.", color: "bg-brand-blue" },
   { icon: Smile, title: "Child-Friendly Environment", desc: "Bright, joyful spaces kids love.", color: "bg-brand-pink" },
   { icon: Shield, title: "Safety & Security", desc: "CCTV, secure entry, trained staff.", color: "bg-brand-green" },
-  { icon: Sparkles, title: "CBSE & Montessori", desc: "CBSE curriculum integrated with Montessori teaching.", color: "bg-brand-purple" },
+  { icon: Sparkles, title: "IIT Delhi Curriculum", desc: "Early education curriculum designed at IIT Delhi, aligned with NEP 2020.", color: "bg-brand-purple" },
   { icon: MessageCircle, title: "Parent Communication", desc: "Daily updates and open dialogue.", color: "bg-brand-orange" },
   { icon: UserCheck, title: "Individual Attention", desc: "Small class sizes, big care.", color: "bg-brand-yellow" },
 ];
@@ -16,7 +16,7 @@ export function WhyChooseUsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-orange text-white text-xs font-bold mb-4">WHY CHOOSE US</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Six big reasons parents trust Tiny Tech</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Six reasons parents trust CSC Tiny Tech</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

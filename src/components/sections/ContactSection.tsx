@@ -22,7 +22,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
             Get in Touch
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-foreground">
-            Ready to join Tiny Tech Pre School?
+            Ready to join CSC Tiny Tech Pre School?
           </h2>
           <p className="text-foreground/70 text-base max-w-2xl mx-auto mb-10">
             Have questions about admissions, fees, or our curriculum? Get in touch with us today. Fill out our online enquiry form or connect with us directly.
@@ -33,7 +33,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
             <div className="bg-card rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between">
               <div>
                 <span className="text-xs font-bold text-brand-orange uppercase tracking-wider block mb-2">School Location & Contacts</span>
-                <h3 className="font-extrabold text-2xl mb-4 text-foreground">Tiny Tech Pre School</h3>
+                <h3 className="font-extrabold text-2xl mb-4 text-foreground">CSC Tiny Tech Pre School</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="h-8 w-8 rounded-full bg-soft-pink text-brand-pink grid place-items-center shrink-0 mt-0.5">
@@ -101,7 +101,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
                   <Send className="h-4 w-4 text-brand-blue" /> Open Enquiry Form
                 </Link>
                 <a
-                  href="https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Pre%20School%2C%20I%27d%20like%20to%20know%20more%20about%20admissions."
+                  href="https://wa.me/918124378478?text=Hi%20CSC%20Tiny%20Tech%20Pre%20School%2C%20I%27d%20like%20to%20know%20more%20about%20admissions."
                   target="_blank"
                   rel="noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#22c35e] text-white py-3.5 px-6 font-bold text-sm shadow-pop transition-transform hover:scale-[1.01]"
@@ -137,7 +137,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
                 { icon: Phone, label: "Call us", value: "+91-08124378478", color: "bg-brand-green", href: "tel:+9108124378478" },
                 { icon: Mail, label: "Email", value: "padmasanmugam@gmail.com", color: "bg-brand-orange", href: "mailto:padmasanmugam@gmail.com" },
                 { icon: MapPin, label: "Visit", value: "24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)", color: "bg-brand-pink", href: "https://www.google.com/maps/dir/?api=1&destination=Tiny+Tech+play+school+Guduvancheri" },
-                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple", href: "https://wa.me/918124378478?text=Hi%20Tiny%20Tech%20Pre%20School%2C%20I%27d%20like%20to%20know%20more%20about%20admissions." },
+                { icon: Phone, label: "WhatsApp", value: "+91 81243 78478", color: "bg-brand-purple", href: "https://wa.me/918124378478?text=Hi%20CSC%20Tiny%20Tech%20Pre%20School%2C%20I%27d%20like%20to%20know%20more%20about%20admissions." },
               ].map((c) => (
                 <a
                   key={c.label}
@@ -183,7 +183,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
               const age = formData.get("age") as string;
               const message = formData.get("message") as string;
 
-              const text = `Hi Tiny Tech Pre School, I'd like to submit an enquiry:
+              const text = `Hi CSC Tiny Tech Pre School, I'd like to submit an enquiry:
 *Name:* ${name || "N/A"}
 *Phone:* ${phone || "N/A"}
 *Email:* ${email || "N/A"}

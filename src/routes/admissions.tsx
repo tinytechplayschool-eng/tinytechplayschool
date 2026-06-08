@@ -7,8 +7,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const Route = createFileRoute("/admissions")({
   head: () => ({
     meta: [
-      { title: "Admissions — Tiny Tech Pre School" },
-      { name: "description", content: "Eligibility, documents, fees and admission details for Tiny Tech Pre School." },
+      { title: "Admissions — CSC Tiny Tech Pre School" },
+      { name: "description", content: "Eligibility, documents, fees and admission details for CSC Tiny Tech Pre School in Guduvancheri." },
     ],
   }),
   component: AdmissionsPage,
@@ -34,8 +34,8 @@ function AdmissionsPage() {
     <PageLayout>
       <PageHero
         eyebrow="ADMISSIONS 2026–27"
-        title="Join the Tiny Tech family"
-        subtitle="Simple steps, transparent fees, and a warm welcome from day one."
+        title="Join the CSC Tiny Tech family"
+        subtitle="Simple enrollment steps, transparent fee structures, and a warm welcome from day one."
       />
       <AdmissionStepsSection />
 

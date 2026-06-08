@@ -21,7 +21,7 @@ export function Navbar() {
           <img src="/tiny.png" alt="Tiny Tech Logo" className="h-9 w-9 rounded-xl object-cover shadow-pop group-hover:scale-110 transition-transform shrink-0" />
           <div className="flex flex-col md:flex-row md:items-baseline gap-0 md:gap-1.5">
             <span className="font-display text-lg sm:text-xl font-bold whitespace-nowrap">
-              Tiny Tech <span className="text-brand-orange">Pre School</span>
+              CSC Tiny Tech <span className="text-brand-orange">Pre School</span>
             </span>
             <span className="text-[10px] sm:text-xs text-muted-foreground font-bold whitespace-nowrap">
               @ Guduvancheri (Near Railway Station)

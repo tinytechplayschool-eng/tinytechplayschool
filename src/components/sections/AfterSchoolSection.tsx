@@ -1,6 +1,14 @@
 import { motion } from "motion/react";
 import { Link } from "@tanstack/react-router";
-import { GraduationCap, Award, Binary, PenTool, MessageSquare, BookOpen, ArrowRight } from "lucide-react";
+import {
+  GraduationCap,
+  Award,
+  Binary,
+  PenTool,
+  MessageSquare,
+  BookOpen,
+  ArrowRight,
+} from "lucide-react";
 
 const academyPrograms = [
   {
@@ -9,7 +17,7 @@ const academyPrograms = [
     desc: "Personalized tutoring for CBSE, IGCSE, and State Board curriculums to build academic excellence and confidence.",
     icon: GraduationCap,
     color: "text-brand-purple bg-soft-purple/50 border-brand-purple/20",
-    badge: "CBSE / IGCSE / State"
+    badge: "CBSE / IGCSE / State",
   },
   {
     title: "Abacus Academy",
@@ -17,7 +25,7 @@ const academyPrograms = [
     desc: "Scientific mental arithmetic program designed to boost concentration, memory power, and lightning-fast math skills.",
     icon: Binary,
     color: "text-brand-blue bg-soft-blue/50 border-brand-blue/20",
-    badge: "9 Levels"
+    badge: "9 Levels",
   },
   {
     title: "Olympiad Coaching",
@@ -25,7 +33,7 @@ const academyPrograms = [
     desc: "Rigorous training for international and national Olympiad exams in Mathematics, Science, and English.",
     icon: Award,
     color: "text-brand-orange bg-soft-orange/50 border-brand-orange/20",
-    badge: "Exam Prep"
+    badge: "Exam Prep",
   },
   {
     title: "Phonics & Grammar",
@@ -33,7 +41,7 @@ const academyPrograms = [
     desc: "Foundational reading, pronunciation, and grammar structure lessons to make children independent readers.",
     icon: BookOpen,
     color: "text-brand-green bg-soft-green/50 border-brand-green/20",
-    badge: "Foundational"
+    badge: "Foundational",
   },
   {
     title: "Handwriting Improvement",
@@ -41,7 +49,7 @@ const academyPrograms = [
     desc: "Specialized training focusing on correct posture, pen grip, letter formation, neatness, and speed.",
     icon: PenTool,
     color: "text-brand-purple bg-soft-purple/50 border-brand-purple/20",
-    badge: "Skill Building"
+    badge: "Skill Building",
   },
   {
     title: "Spoken English",
@@ -49,8 +57,8 @@ const academyPrograms = [
     desc: "Interactive vocabulary building, phonetics, sentence structuring, and public speaking confidence sessions.",
     icon: MessageSquare,
     color: "text-brand-pink bg-soft-pink/50 border-brand-pink/20",
-    badge: "Interactive"
-  }
+    badge: "Interactive",
+  },
 ];
 
 export function AfterSchoolSection() {
@@ -65,11 +73,10 @@ export function AfterSchoolSection() {
           <span className="inline-block px-3 py-1 rounded-full bg-brand-pink text-white text-xs font-bold mb-4 uppercase tracking-wider">
             Junior Academy
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            After-School & Tuitions
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">After-School & Tuitions</h2>
           <p className="text-foreground/70 text-lg">
-            Empowering students with structured academic tuitions (Grades 1–12) and specialized skill development programs.
+            Empowering students with structured academic tuitions (Grades 1–12) and specialized
+            skill development programs.
           </p>
         </div>
 

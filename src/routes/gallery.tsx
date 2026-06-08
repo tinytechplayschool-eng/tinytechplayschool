@@ -6,8 +6,8 @@ import { GallerySection } from "@/components/sections/GallerySection";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Tiny Tech Pre School" },
-      { name: "description", content: "Photos and videos from a typical day at Tiny Tech Pre School." },
+      { title: "Gallery — CSC Tiny Tech Pre School" },
+      { name: "description", content: "Photos and videos from a typical day at CSC Tiny Tech Pre School." },
     ],
   }),
   component: GalleryPage,

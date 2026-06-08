@@ -39,8 +39,8 @@ const whatsappVideos = [
 // Banners/Posters from public/banner directory
 const schoolBanners = [
   { src: "/banner/Banner%20Padma%20(1)-1.png", alt: "Admissions & Teacher Training Academy Poster", desc: "Montessori Teacher Training and Advanced Montessori & Primary Education approved by Govt. of India." },
-  { src: "/banner/6x4%20-%201%20copy%20(2).jpg.jpeg", alt: "Tiny Tech Pre School Admissions Banner", desc: "Admissions open for Playgroup, Nursery, LKG, UKG, and Day Care. Contact +91-08124378478." },
-  { src: "/banner/pamplet%20design%20ppt%20(3).png", alt: "Tiny Tech Academy Pamphlet", desc: "Special evening classes including Olympiad coaching, Abacus, Handwriting, Phonics, Spoken English, and Tuitions." },
+  { src: "/banner/6x4%20-%201%20copy%20(2).jpg.jpeg", alt: "CSC Tiny Tech Pre School Admissions Banner", desc: "Admissions open for Playgroup, Nursery, LKG, UKG, and Day Care. Contact +91-08124378478." },
+  { src: "/banner/pamplet%20design%20ppt%20(3).png", alt: "CSC Tiny Tech Academy Pamphlet", desc: "Special evening classes including Olympiad coaching, Abacus, Handwriting, Phonics, Spoken English, and Tuitions." },
   { src: "/banner/WhatsApp%20Image%202026-06-01%20at%2010.48.07%20AM%20(1).jpeg", alt: "Special Event and Programs Poster", desc: "Details of extracurricular activities and specialized programs." },
 ];
 
@@ -57,7 +57,7 @@ export function GallerySection({ preview = false }: { preview?: boolean }) {
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-pink text-white text-xs font-bold mb-4">GALLERY</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Little moments, big smiles</h2>
-          <p className="text-foreground/70">A real look into our classrooms, activities, events, and training modules at Tiny Tech.</p>
+          <p className="text-foreground/70">A real look into our classrooms, activities, events, and training modules at CSC Tiny Tech.</p>
         </div>
 
         {/* Tab Controls (Only shown on full page) */}

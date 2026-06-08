@@ -13,25 +13,36 @@ export function AboutSection() {
         >
           <span className="inline-block px-3 py-1 rounded-full bg-brand-yellow text-secondary-foreground text-xs font-bold mb-4">ABOUT OUR SCHOOL</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            A bright start for every little learner
+            Providing a world-class start for every little learner
           </h2>
           <p className="text-foreground/80 mb-4">
-            At Tiny Tech, we follow a CBSE curriculum integrated with the Montessori method of teaching. We believe every child is born curious. Our playful,
-            Montessori-inspired environment turns that curiosity into a lifelong
-            love of learning — through hands-on activities, stories, songs, and lots
-            of laughter.
+            At CSC Tiny Tech, we believe every child deserves the best start in life. Our innovative pre-school network provides a play-based, brain-responsive curriculum developed in association with <strong>IIT Delhi</strong>. We bridge the educational gap by offering a world-class, tech-integrated, and highly affordable early learning experience.
           </p>
           <p className="text-foreground/80 mb-6">
-            Our experienced teachers, child-safe campus and small class sizes mean
-            your little one gets the attention and care they deserve, every single day.
+            Our curriculum leverages smart digital tools to create a dynamic and interactive educational environment. Through hands-on sensorial materials, engaging storytelling, and active play, we guide children on a journey of discovery and holistic growth.
           </p>
         </motion.div>
- 
+
         <div className="grid sm:grid-cols-1 gap-4">
           {[
-            { icon: Lightbulb, color: "bg-brand-blue", title: "Our Vision", text: "To nurture confident, kind and creative children who love to learn." },
-            { icon: Target, color: "bg-brand-orange", title: "Our Mission", text: "Provide a safe, joyful and stimulating space where every child can grow at their own pace." },
-            { icon: Heart, color: "bg-brand-pink", title: "Our Approach", text: "CBSE curriculum with Montessori method of teaching, blending academic structure with self-paced learning." },
+            {
+              icon: Lightbulb,
+              color: "bg-brand-blue",
+              title: "Our Vision",
+              text: "To bridge the educational gap between metropolitan and rural communities by providing world-class, tech-integrated early learning.",
+            },
+            {
+              icon: Target,
+              color: "bg-brand-orange",
+              title: "Our Mission",
+              text: "Provide a joyful, stimulating, and highly affordable early learning space where children can grow at their own pace.",
+            },
+            {
+              icon: Heart,
+              color: "bg-brand-pink",
+              title: "Our Approach",
+              text: "IIT Delhi designed curriculum, play-based & brain-responsive learning integrating smart digital tools and holistic developmental focus.",
+            },
           ].map((c, i) => (
             <motion.div
               key={c.title}
