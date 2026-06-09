@@ -25,8 +25,8 @@ export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-brand-purple text-white text-xs font-bold mb-4">OUR PROGRAMS</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">A perfect program for every child</h2>
-          <p className="text-foreground/70">From tiny toddlers to confident kindergartners — we have a joyful learning journey for every child.</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">A perfect program for all age group children</h2>
+          <p className="text-foreground/70">From tiny toddlers to confident kindergartners — we have a joyful learning journey for all age group children.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

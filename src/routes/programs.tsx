@@ -32,7 +32,7 @@ function ProgramsPage() {
     <PageLayout>
       <PageHero
         eyebrow="PROGRAMS"
-        title="A joyful program for every age"
+        title="A joyful program for all age group children"
         subtitle="Featuring a play-based, brain-responsive, and tech-enabled curriculum designed by IIT Delhi in association with CSC Academy, aligned with NEP 2020."
       />
       <ProgramsSection isProgramsPage={true} />
