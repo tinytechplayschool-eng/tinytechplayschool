@@ -74,7 +74,7 @@ export function AfterSchoolSection() {
             Junior Academy
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">After-School & Tuitions</h2>
-          <p className="text-foreground/70 text-lg">
+          <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
             Empowering students with structured academic tuitions (Grades 1–12) and specialized
             skill development programs.
           </p>
