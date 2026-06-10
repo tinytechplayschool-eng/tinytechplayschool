@@ -7,8 +7,8 @@ import { AfterSchoolSection } from "@/components/sections/AfterSchoolSection";
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Programs — CSC Tiny Tech Pre School" },
-      { name: "description", content: "Playgroup, Nursery, Kindergarten, Day Care, and Govt. of India approved Montessori and Pre-primary Teacher Training Diploma courses at CSC Tiny Tech Guduvancheri." },
+      { title: "Play School & Nursery School Programs in Guduvancheri | Montessori Teacher Training" },
+      { name: "description", content: "Play school, nursery school, kindergarten in Guduvancheri with IIT Delhi curriculum. Government approved Montessori teacher training course, abacus classes, spoken English classes, and CBSE tuition centre at CSC Tiny Tech Guduvancheri." },
     ],
   }),
   component: ProgramsPage,
@@ -32,8 +32,8 @@ function ProgramsPage() {
     <PageLayout>
       <PageHero
         eyebrow="PROGRAMS"
-        title="A joyful program for all age group children"
-        subtitle="Featuring a play-based, brain-responsive, and tech-enabled curriculum designed by IIT Delhi in association with CSC Academy, aligned with NEP 2020."
+        title="Play school, nursery & kindergarten in Guduvancheri"
+        subtitle="Featuring a play-based, brain-responsive, and tech-enabled curriculum designed by IIT Delhi. Preschool with activity based learning, Montessori teacher training, and government approved diploma courses."
       />
       <ProgramsSection isProgramsPage={true} />
 
@@ -66,9 +66,8 @@ function ProgramsPage() {
         <div className="absolute top-10 -right-20 h-72 w-72 rounded-full bg-brand-yellow/30 blur-2xl pointer-events-none" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block px-3 py-1.5 rounded-full bg-brand-blue text-white text-xs font-bold mb-4 tracking-wider uppercase">Teacher Training Academy</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Govt. of India Approved Diploma Courses</h2>
-            <p className="text-foreground/70">Empowering aspiring educators with professional diplomas in early childhood education. Build a rewarding career with our government-approved certifications.</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Government Approved Montessori Teacher Training in Guduvancheri</h2>
+            <p className="text-foreground/70">Government approved Montessori teacher training course in Guduvancheri. Empowering aspiring educators with professional diplomas in early childhood education. Build a rewarding career with our certified courses.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">

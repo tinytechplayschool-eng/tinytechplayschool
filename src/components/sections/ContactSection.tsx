@@ -18,14 +18,11 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
         <div className="absolute bottom-0 -right-20 h-72 w-72 rounded-full bg-brand-blue/5 blur-2xl pointer-events-none" />
 
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-blue text-white text-xs font-bold mb-4 uppercase tracking-wider">
-            Get in Touch
-          </span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-foreground">
-            Ready to join CSC Tiny Tech Pre School?
+            Preschool admission Guduvancheri 2026 — Enquire now!
           </h2>
           <p className="text-foreground/70 text-base max-w-2xl mx-auto mb-10">
-            Have questions about admissions, fees, or our curriculum? Get in touch with us today. Fill out our online enquiry form or connect with us directly.
+            Ready to join the best preschool in Guduvancheri? Have questions about nursery admission, junior KG admission, fees, or our day care centre? Get in touch today.
           </p>
 
           <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
@@ -42,7 +39,7 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
                     <div>
                       <div className="text-xs text-muted-foreground">Address</div>
                       <div className="text-sm font-semibold text-foreground">24, Rajaji Street, N.G.O Colony, Guduvancheri, Tamil Nadu, India</div>
-                      <div className="text-xs text-muted-foreground mt-0.5">(Near Railway Station and Bus Stand)</div>
+                      <div className="text-xs text-muted-foreground mt-0.5">(Near SRM University, Railway Station & Bus Stand)</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -120,9 +117,8 @@ export function ContactSection({ isContactPage = false }: ContactSectionProps) {
     <section className="bg-soft-blue py-20" id="contact">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-blue text-white text-xs font-bold mb-4">GET IN TOUCH</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">We'd love to hear from you</h2>
-          <p className="text-foreground/70">Have a question or want to book a tour? Send us a message.</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Preschool admission Guduvancheri 2026 — Contact Us</h2>
+          <p className="text-foreground/70">Contact the best preschool in Guduvancheri for nursery admission, junior KG admission, day care centre enrolment, or Montessori teacher training near SRM University.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">

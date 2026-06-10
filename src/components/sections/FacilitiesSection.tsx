@@ -17,15 +17,11 @@ export function FacilitiesSection() {
     <section className="bg-card py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-blue text-white text-xs font-bold mb-4">
-            OUR FACILITIES
-          </span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
-            Safe, bright spaces to grow in
+            Safe and secure preschool facilities in Guduvancheri
           </h2>
           <p className="text-foreground/70">
-            Every corner of our campus is designed with your child's safety, comfort and curiosity
-            in mind.
+            Our campus near SRM University offers safe and secure day care for working parents, with CCTV-monitored classrooms, indoor &amp; outdoor play zones, and modern learning spaces.
           </p>
         </div>
 

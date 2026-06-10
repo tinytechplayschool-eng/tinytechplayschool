@@ -7,8 +7,8 @@ import { ShieldCheck, Camera, HeartPulse, Lock } from "lucide-react";
 export const Route = createFileRoute("/facilities")({
   head: () => ({
     meta: [
-      { title: "Facilities — CSC Tiny Tech Pre School" },
-      { name: "description", content: "Smart classrooms, indoor & outdoor play, library, activity rooms, CCTV, transportation and day care." },
+      { title: "Safe & Secure Preschool Facilities in Guduvancheri | Day Care Centre | CSC Tiny Tech" },
+      { name: "description", content: "Safe and secure day care for working parents in Guduvancheri. Smart classrooms, CCTV-monitored play areas, library, transportation & affordable day care centre near SRM University and Guduvancheri Railway Station." },
     ],
   }),
   component: FacilitiesPage,
@@ -34,8 +34,7 @@ function FacilitiesPage() {
       <section className="bg-soft-green py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-green text-white text-xs font-bold mb-4">SAFETY FIRST</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold">Your child's safety is our promise</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold">Safe and secure day care for working parents</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {safety.map((s) => (

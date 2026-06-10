@@ -6,8 +6,8 @@ import { AboutSection } from "@/components/sections/AboutSection";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — CSC Tiny Tech Pre School" },
-      { name: "description", content: "Our story, mission, vision and the wonderful teachers behind CSC Tiny Tech Pre School." },
+      { title: "About Us — Best Preschool in Guduvancheri | CSC Tiny Tech Play School" },
+      { name: "description", content: "CSC Tiny Tech is the best preschool for kids in Guduvancheri. Learn about our IIT Delhi designed curriculum, Montessori preschool near Guduvancheri Railway Station, and our 15+ years of nurturing happy learners." },
     ],
   }),
   component: AboutPage,
@@ -27,10 +27,9 @@ function AboutPage() {
       <section className="bg-soft-orange py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
           <div>
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-orange text-white text-xs font-bold mb-4">OUR STORY</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">A school built with love</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">A school built with love in Guduvancheri</h2>
             <p className="text-foreground/80 mb-3">
-              CSC Tiny Tech Guduvancheri brings high-quality, tech-enabled, and play-based early childhood education to our community. Developed by CSC Academy in association with IIT Delhi, our curriculum bridges the educational gap by providing a world-class, NEP 2020-aligned learning experience. Today, we welcome children each year across our Playgroup, Nursery, Kindergarten, and Day Care programs.
+              CSC Tiny Tech Guduvancheri brings high-quality, tech-enabled, and play-based early childhood education to our community. As the best preschool for kids in Guduvancheri, our curriculum developed by CSC Academy in association with IIT Delhi bridges the educational gap with a world-class, NEP 2020-aligned learning experience. We offer nursery school, kindergarten, and affordable day care centre programs near SRM University and Guduvancheri Railway Station.
             </p>
             <p className="text-foreground/80">
               What hasn't changed is our heart — every child is known by name, every parent
@@ -38,7 +37,6 @@ function AboutPage() {
             </p>
           </div>
           <div className="bg-card rounded-3xl p-7 shadow-card">
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-purple text-white text-xs font-bold mb-4">FOUNDER'S MESSAGE</span>
             <h3 className="font-extrabold text-2xl mb-3">"Every child is a bright spark."</h3>
             <p className="text-foreground/80 mb-4">
               When we established our CSC Tiny Tech center in Guduvancheri, we promised parents one thing — your child will be

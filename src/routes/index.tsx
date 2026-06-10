@@ -15,10 +15,10 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CSC Tiny Tech Pre School — Guduvancheri | IIT Delhi Designed & NEP 2020 Aligned" },
-      { name: "description", content: "Play-based, brain-responsive, and tech-enabled early childhood education designed by IIT Delhi. Admissions open for Playgroup, Nursery, and Kindergarten at Guduvancheri." },
-      { property: "og:title", content: "CSC Tiny Tech Pre School" },
-      { property: "og:description", content: "IIT Delhi-designed, NEP 2020 aligned early childhood education network." },
+      { title: "Best Preschool in Guduvancheri — CSC Tiny Tech | Play School, Day Care & Kindergarten" },
+      { name: "description", content: "CSC Tiny Tech is the best preschool for kids in Guduvancheri. Preschool admission 2026 open for Play Group, Nursery, Junior KG & Senior KG. Safe and secure day care for working parents. Montessori preschool near Guduvancheri Railway Station & SRM University. Activity based learning with IIT Delhi designed curriculum." },
+      { property: "og:title", content: "Best Preschool in Guduvancheri — CSC Tiny Tech Pre School" },
+      { property: "og:description", content: "Play school in Guduvancheri with IIT Delhi designed, NEP 2020 aligned curriculum. Nursery admission, kindergarten, affordable day care centre & Montessori teacher training." },
     ],
   }),
   component: Home,

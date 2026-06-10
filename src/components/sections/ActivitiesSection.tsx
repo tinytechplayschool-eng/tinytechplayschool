@@ -20,9 +20,8 @@ export function ActivitiesSection() {
     <section className="bg-soft-green py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-green text-white text-xs font-bold mb-4">EXTRA-CURRICULAR</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Extra curricular activities</h2>
-          <p className="text-sm md:text-base text-foreground/70 max-w-xl mx-auto">Explore our wide range of creative arts, martial arts, and skill-building programs designed to nurture every child's unique talents.</p>
+          <p className="text-sm md:text-base text-foreground/70 max-w-xl mx-auto">Our preschool with activity based learning in Guduvancheri offers creative arts, martial arts, abacus classes, spoken English, and skill-building programs designed to nurture every child's unique talents.</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

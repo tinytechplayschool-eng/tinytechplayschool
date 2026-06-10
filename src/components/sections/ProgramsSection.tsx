@@ -24,9 +24,8 @@ export function ProgramsSection({ isProgramsPage = false }: ProgramsSectionProps
     <section className="bg-soft-purple py-20" id="programs">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-purple text-white text-xs font-bold mb-4">OUR PROGRAMS</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">A perfect program for all age group children</h2>
-          <p className="text-foreground/70">From tiny toddlers to confident kindergartners — we have a joyful learning journey for all age group children.</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Nursery, Kindergarten & Day Care in Guduvancheri</h2>
+          <p className="text-foreground/70">From play group to senior KG — preschool admission in Guduvancheri is open. We offer Nursery Admission Guduvancheri, Junior KG Admission Guduvancheri, and safe daycare options at CSC Tiny Tech.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -11,15 +11,14 @@ export function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-yellow text-secondary-foreground text-xs font-bold mb-4">ABOUT OUR SCHOOL</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Providing a world-class start for every little learner
+            Best preschool for kids in Guduvancheri
           </h2>
           <p className="text-foreground/80 mb-4">
-            At CSC Tiny Tech, we believe every child deserves the best start in life. Our innovative pre-school network provides a play-based, brain-responsive curriculum developed in association with <strong>IIT Delhi</strong>. We bridge the educational gap by offering a world-class, tech-integrated, and highly affordable early learning experience.
+            CSC Tiny Tech is the best preschool in Guduvancheri, offering a play-based, brain-responsive curriculum developed in association with <strong>IIT Delhi</strong>. As a leading play school in Guduvancheri, we provide world-class, tech-integrated, and highly affordable early learning for nursery school, kindergarten, and day care programs.
           </p>
           <p className="text-foreground/80 mb-6">
-            Our curriculum leverages smart digital tools to create a dynamic and interactive educational environment. Through hands-on sensorial materials, engaging storytelling, and active play, we guide children on a journey of discovery and holistic growth.
+            Our preschool with activity based learning in Guduvancheri leverages smart digital tools to create a dynamic educational environment. Conveniently located near SRM University and Guduvancheri Railway Station, we guide children through hands-on sensorial materials, engaging storytelling, and active play.
           </p>
         </motion.div>
 
@@ -35,7 +34,7 @@ export function AboutSection() {
               icon: Target,
               color: "bg-brand-orange",
               title: "Our Mission",
-              text: "Provide a joyful, stimulating, and highly affordable early learning space where children can grow at their own pace.",
+              text: "Provide a joyful, stimulating, and affordable day care centre in Guduvancheri where children can grow at their own pace with safe and secure care for working parents.",
             },
             {
               icon: Heart,

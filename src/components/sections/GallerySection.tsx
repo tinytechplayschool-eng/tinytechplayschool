@@ -55,9 +55,8 @@ export function GallerySection({ preview = false }: { preview?: boolean }) {
     <section className="bg-soft-pink py-20" id="gallery">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-pink text-white text-xs font-bold mb-4">GALLERY</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Little moments, big smiles</h2>
-          <p className="text-foreground/70">A real look into our classrooms, activities, events, and training modules at CSC Tiny Tech.</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Best play school in Guduvancheri in photos & videos</h2>
+          <p className="text-foreground/70">A real look into activity based learning, play school classrooms, day care centre, and Montessori teacher training sessions at CSC Tiny Tech near Guduvancheri Railway Station.</p>
         </div>
 
         {/* Tab Controls (Only shown on full page) */}

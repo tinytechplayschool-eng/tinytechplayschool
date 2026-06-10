@@ -11,7 +11,7 @@ export function Footer() {
             <span className="font-display text-xl font-bold">CSC Tiny Tech</span>
           </div>
           <p className="text-sm opacity-80">
-            An innovative, tech-enabled early childhood education network designed in association with IIT Delhi.
+            CSC Tiny Tech is the best preschool in Guduvancheri — a play school, nursery school, kindergarten, and day care centre near SRM University & Guduvancheri Railway Station. Montessori teacher training and IIT Delhi designed curriculum.
           </p>
           <div className="flex gap-3 mt-4">
             <a href="#" aria-label="Facebook" className="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-brand-blue transition-colors"><Facebook className="h-4 w-4" /></a>
@@ -51,7 +51,7 @@ export function Footer() {
                 className="hover:text-brand-yellow transition-colors"
               >
                 24, Rajaji Street, N.G.O Colony, Guduvancheri, Tamil Nadu, India<br />
-                <span className="text-xs text-brand-yellow font-semibold">Near to railway station and bus stand</span>
+                <span className="text-xs text-brand-yellow font-semibold">Near SRM University, Railway Station & Bus Stand</span>
               </a>
             </li>
           </ul>
@@ -69,7 +69,8 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 text-xs opacity-70 flex flex-wrap justify-between gap-2">
-          <p>© {new Date().getFullYear()} CSC Tiny Tech Pre School. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CSC Tiny Tech Pre School Guduvancheri. All rights reserved.</p>
+          <p className="hidden">Best Preschool in Guduvancheri | Play School in Guduvancheri | Nursery School in Guduvancheri | Day Care Centre in Guduvancheri | Kindergarten in Guduvancheri | Preschool Admission Guduvancheri 2026 | Montessori Teacher Training in Guduvancheri | Safe and Secure Day Care for Working Parents | Preschool Near SRM University | Montessori Preschool Near Guduvancheri Railway Station | Abacus Classes for Children in Guduvancheri | Spoken English Classes in Guduvancheri | CBSE Tuition Centre Guduvancheri | Preschool with Activity Based Learning in Guduvancheri</p>
           <p>Made with ❤️ for little learners.</p>
         </div>
       </div>

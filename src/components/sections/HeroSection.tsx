@@ -23,7 +23,7 @@ export function HeroSection() {
           <div className="relative rounded-[2rem] overflow-hidden shadow-pop ring-8 ring-white/20">
             <img
               src="/banner/6x4 - 1 copy (2).jpg.jpeg"
-              alt="Happy children learning and playing at CSC Tiny Tech Pre School"
+              alt="Best play school in Guduvancheri - Happy children learning at CSC Tiny Tech Pre School near SRM University"
               width={1536}
               height={1152}
               className="w-full h-auto object-cover"
@@ -42,11 +42,11 @@ export function HeroSection() {
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
-            Play-Based & <span className="text-brand-yellow">Tech-Enabled</span> Early <span className="text-brand-orange">Learning</span>
+            Best <span className="text-brand-yellow">Preschool</span> in <span className="text-brand-orange">Guduvancheri</span>
           </h1>
 
           <p className="text-lg opacity-95 max-w-xl mb-8">
-            An innovative, brain-responsive curriculum designed by <strong>IIT Delhi</strong> in association with <strong>CSC Academy</strong>. We leverage smart digital tools to create a playful, NEP 2020 aligned educational experience.
+            CSC Tiny Tech is the best play school in Guduvancheri with an innovative, brain-responsive curriculum designed by <strong>IIT Delhi</strong>. We offer preschool with activity based learning, safe and secure day care for working parents, and nursery school programs — all near SRM University & Guduvancheri Railway Station.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -84,7 +84,7 @@ export function HeroSection() {
                 Our Location <span className="text-[10px] text-white/60 font-normal lowercase tracking-normal">(click to open map)</span>
               </div>
               <p className="text-sm font-semibold text-white/95 group-hover:underline">
-                24, Rajaji Street, N.G.O Colony, Guduvancheri (Near Railway Station)
+                24, Rajaji Street, N.G.O Colony, Guduvancheri — Near SRM University & Railway Station
               </p>
             </div>
           </a>

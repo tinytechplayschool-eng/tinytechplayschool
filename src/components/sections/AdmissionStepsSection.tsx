@@ -13,8 +13,8 @@ export function AdmissionStepsSection() {
     <section className="bg-card py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-purple text-white text-xs font-bold mb-4">ADMISSION PROCESS</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Just four simple steps</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Preschool admission in Guduvancheri — 4 simple steps</h2>
+          <p className="text-foreground/70">Quick and easy nursery admission, junior KG admission, and day care enrolment process at CSC Tiny Tech.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 relative">

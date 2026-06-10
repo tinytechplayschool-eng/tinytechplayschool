@@ -14,7 +14,7 @@ const academyPrograms = [
   {
     title: "School Tuitions",
     subtitle: "1st to 12th Grade",
-    desc: "Personalized tutoring for CBSE, IGCSE, and State Board curriculums to build academic excellence and confidence.",
+    desc: "CBSE tuition centre in Guduvancheri — personalized tutoring for CBSE, IGCSE, and State Board curriculums to build academic excellence and confidence.",
     icon: GraduationCap,
     color: "text-brand-purple bg-soft-purple/50 border-brand-purple/20",
     badge: "CBSE / IGCSE / State",
@@ -22,7 +22,7 @@ const academyPrograms = [
   {
     title: "Abacus Academy",
     subtitle: "9 Comprehensive Levels",
-    desc: "Scientific mental arithmetic program designed to boost concentration, memory power, and lightning-fast math skills.",
+    desc: "Abacus classes for children in Guduvancheri — scientific mental arithmetic program designed to boost concentration, memory power, and lightning-fast math skills.",
     icon: Binary,
     color: "text-brand-blue bg-soft-blue/50 border-brand-blue/20",
     badge: "9 Levels",
@@ -54,7 +54,7 @@ const academyPrograms = [
   {
     title: "Spoken English",
     subtitle: "Confident Communication",
-    desc: "Interactive vocabulary building, phonetics, sentence structuring, and public speaking confidence sessions.",
+    desc: "Spoken English classes in Guduvancheri — interactive vocabulary building, phonetics, sentence structuring, and public speaking confidence sessions.",
     icon: MessageSquare,
     color: "text-brand-pink bg-soft-pink/50 border-brand-pink/20",
     badge: "Interactive",
@@ -70,13 +70,9 @@ export function AfterSchoolSection() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-pink text-white text-xs font-bold mb-4 uppercase tracking-wider">
-            Junior Academy
-          </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">After-School & Tuitions</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">CBSE Tuition Centre & After-School Academy in Guduvancheri</h2>
           <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
-            Empowering students with structured academic tuitions (Grades 1–12) and specialized
-            skill development programs.
+            Abacus classes for children in Guduvancheri, spoken English classes in Guduvancheri, CBSE tuition centre Guduvancheri, and more — structured academic tuitions (Grades 1–12) and specialized skill programs.
           </p>
         </div>
 

@@ -15,8 +15,7 @@ export function WhyChooseUsSection() {
     <section className="bg-card py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-brand-orange text-white text-xs font-bold mb-4">WHY CHOOSE US</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Six reasons parents trust CSC Tiny Tech</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Why we are the best preschool for kids in Guduvancheri</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

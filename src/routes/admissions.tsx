@@ -7,8 +7,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const Route = createFileRoute("/admissions")({
   head: () => ({
     meta: [
-      { title: "Admissions — CSC Tiny Tech Pre School" },
-      { name: "description", content: "Eligibility, documents, fees and admission details for CSC Tiny Tech Pre School in Guduvancheri." },
+      { title: "Preschool Admission Guduvancheri 2026 — Nursery, Junior KG & Day Care | CSC Tiny Tech" },
+      { name: "description", content: "Preschool admission Guduvancheri 2026 open! Nursery admission, junior KG admission, and affordable day care centre in Guduvancheri. Transparent fees, simple steps at CSC Tiny Tech — best preschool near SRM University & Guduvancheri Railway Station." },
     ],
   }),
   component: AdmissionsPage,
@@ -34,15 +34,14 @@ function AdmissionsPage() {
     <PageLayout>
       <PageHero
         eyebrow="ADMISSIONS 2026–27"
-        title="Join the CSC Tiny Tech family"
-        subtitle="Simple enrollment steps, transparent fee structures, and a warm welcome from day one."
+        title="Preschool admission Guduvancheri 2026"
+        subtitle="Nursery admission, junior KG admission, and day care enrolment — simple steps, transparent fees, and a warm welcome from day one."
       />
       <AdmissionStepsSection />
 
       <section className="bg-soft-yellow py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8">
           <div className="bg-card rounded-3xl p-7 shadow-card">
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-blue text-white text-xs font-bold mb-4">ELIGIBILITY</span>
             <h2 className="text-2xl font-extrabold mb-4">Who can apply?</h2>
             <ul className="space-y-2 text-sm">
               <li>• <b>Play Group</b> — 1.5 to 2.5 years on 1 June 2026</li>
@@ -53,7 +52,6 @@ function AdmissionsPage() {
             </ul>
           </div>
           <div className="bg-card rounded-3xl p-7 shadow-card">
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-purple text-white text-xs font-bold mb-4">DOCUMENTS REQUIRED</span>
             <h2 className="text-2xl font-extrabold mb-4">Bring these along</h2>
             <ul className="space-y-2 text-sm">
               {documents.map((d) => (
@@ -67,9 +65,8 @@ function AdmissionsPage() {
       <section className="bg-card py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="inline-block px-3 py-1 rounded-full bg-brand-orange text-white text-xs font-bold mb-4">FEES</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold">Transparent, all-inclusive</h2>
-            <p className="text-muted-foreground mt-2">Fees include materials, snacks, activities and field trips.</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold">Affordable & transparent fee structure</h2>
+            <p className="text-muted-foreground mt-2">Affordable day care centre in Guduvancheri — fees include materials, snacks, activities and field trips.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
             {fees.map((f) => (
