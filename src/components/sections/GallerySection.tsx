@@ -29,6 +29,7 @@ const whatsappPhotos = [
 
 // Real student videos from the public/WhatsApp videos directory
 const whatsappVideos = [
+  { src: "/WhatsApp%20Video%202026-06-10%20at%2011.20.39%20PM.mp4", title: "Creative Learning & Fun Activities" },
   { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.20%20AM%20(1).mp4", title: "Joyful Play & Interactions" },
   { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.20%20AM.mp4", title: "Circle Time & Activity Sessions" },
   { src: "/WhatsApp%20Unknown%202026-06-01%20at%2010.51.09%20AM/WhatsApp%20Video%202026-06-01%20at%2010.49.21%20AM%20(1).mp4", title: "Classroom Fun Activities" },
