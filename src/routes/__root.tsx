@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
 
 import appCss from "../styles.css?url";
 
@@ -68,32 +69,97 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CSC Tiny Tech Pre School Guduvancheri — Best Preschool & Day Care Centre" },
-      { name: "description", content: "CSC Tiny Tech is the best preschool in Guduvancheri offering play school, nursery school, kindergarten, day care centre, and Montessori teacher training. IIT Delhi designed curriculum aligned with NEP 2020. Preschool near SRM University & Guduvancheri Railway Station." },
-      { name: "keywords", content: "best preschool in guduvancheri, play school in guduvancheri, nursery school in guduvancheri, day care centre in guduvancheri, kindergarten in guduvancheri, preschool admission guduvancheri 2026, montessori teacher training in guduvancheri, preschool near SRM university, montessori preschool near guduvancheri railway station, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri" },
-      { property: "og:title", content: "CSC Tiny Tech — Best Preschool & Day Care in Guduvancheri" },
-      { property: "og:description", content: "Best preschool in Guduvancheri with IIT Delhi designed curriculum. Play school, nursery, kindergarten, day care & Montessori teacher training. Near SRM University & Railway Station." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/x-icon", href: "/tiny.ico" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" },
-    ],
-  }),
-  shellComponent: RootShell,
-  component: RootComponent,
-  notFoundComponent: NotFoundComponent,
-  errorComponent: ErrorComponent,
-});
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
+  {
+    head: () => ({
+      meta: [
+        { charSet: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          title:
+            "CSC Tiny Tech Pre School Guduvancheri — Best Preschool & Day Care Centre",
+        },
+        {
+          name: "description",
+          content:
+            "CSC Tiny Tech is the best preschool in Guduvancheri offering play school, nursery school, kindergarten, day care centre, and Montessori teacher training. IIT Delhi designed curriculum aligned with NEP 2020. Preschool near SRM University & Guduvancheri Railway Station.",
+        },
+        {
+          name: "keywords",
+          content:
+            "best preschool in guduvancheri, play school in guduvancheri, nursery school in guduvancheri, day care centre in guduvancheri, kindergarten in guduvancheri, preschool admission guduvancheri 2026, montessori teacher training in guduvancheri, preschool near SRM university, montessori preschool near guduvancheri railway station, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri, playschool in vadakkupattu, preschool in vadakkupattu, day care in vadakkupattu, kindergarten in chennai, best playschool near me",
+        },
+        { name: "robots", content: "index, follow" },
+        { name: "author", content: "CSC Tiny Tech Pre School" },
+        { name: "geo.region", content: "IN-TN" },
+        { name: "geo.placename", content: "Guduvancheri, Chennai" },
+        { name: "geo.position", content: "12.8449;80.0624" },
+        { name: "ICBM", content: "12.8449, 80.0624" },
+        {
+          property: "og:title",
+          content:
+            "CSC Tiny Tech — Best Preschool & Day Care in Guduvancheri",
+        },
+        {
+          property: "og:description",
+          content:
+            "Best preschool in Guduvancheri with IIT Delhi designed curriculum. Play school, nursery, kindergarten, day care & Montessori teacher training. Near SRM University & Railway Station.",
+        },
+        { property: "og:type", content: "website" },
+        {
+          property: "og:url",
+          content: "https://www.tinytechplayschool.in",
+        },
+        {
+          property: "og:image",
+          content: "https://www.tinytechplayschool.in/tiny.png",
+        },
+        {
+          property: "og:site_name",
+          content: "CSC Tiny Tech Pre School Guduvancheri",
+        },
+        { property: "og:locale", content: "en_IN" },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "twitter:title",
+          content:
+            "CSC Tiny Tech — Best Preschool & Day Care in Guduvancheri",
+        },
+        {
+          name: "twitter:description",
+          content:
+            "Best preschool in Guduvancheri with IIT Delhi designed curriculum. Play school, nursery, kindergarten, day care & Montessori teacher training.",
+        },
+        {
+          name: "twitter:image",
+          content: "https://www.tinytechplayschool.in/tiny.png",
+        },
+      ],
+      links: [
+        { rel: "stylesheet", href: appCss },
+        { rel: "icon", type: "image/x-icon", href: "/tiny.ico" },
+        {
+          rel: "canonical",
+          href: "https://www.tinytechplayschool.in",
+        },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossOrigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap",
+        },
+      ],
+    }),
+    shellComponent: RootShell,
+    component: RootComponent,
+    notFoundComponent: NotFoundComponent,
+    errorComponent: ErrorComponent,
+  },
+);
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
@@ -114,6 +180,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <SchemaMarkup />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>

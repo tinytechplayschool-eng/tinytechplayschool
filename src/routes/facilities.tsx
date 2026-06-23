@@ -4,15 +4,54 @@ import { PageHero } from "@/components/PageHero";
 import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
 import { ShieldCheck, Camera, HeartPulse, Lock } from "lucide-react";
 
-export const Route = createFileRoute("/facilities")({
-  head: () => ({
-    meta: [
-      { title: "Safe & Secure Preschool Facilities in Guduvancheri | Day Care Centre | CSC Tiny Tech" },
-      { name: "description", content: "Safe and secure day care for working parents in Guduvancheri. Smart classrooms, CCTV-monitored play areas, library, transportation & affordable day care centre near SRM University and Guduvancheri Railway Station." },
-    ],
-  }),
-  component: FacilitiesPage,
-});
+export const Route = createFileRoute("/facilities")(
+  {
+    head: () => ({
+      meta: [
+        {
+          title:
+            "Safe & Secure Preschool Facilities in Guduvancheri | Day Care Centre | CSC Tiny Tech",
+        },
+        {
+          name: "description",
+          content:
+            "Safe and secure day care for working parents in Guduvancheri. Smart classrooms, CCTV-monitored play areas, library, transportation & affordable day care centre near SRM University and Guduvancheri Railway Station.",
+        },
+        {
+          name: "keywords",
+          content:
+            "preschool facilities guduvancheri, safe day care guduvancheri, CCTV preschool guduvancheri, smart classroom guduvancheri, day care in vadakkupattu, preschool transport guduvancheri, best playschool near me, secure preschool guduvancheri, preschool play area guduvancheri, safe and secure day care for working parents",
+        },
+        {
+          property: "og:title",
+          content:
+            "Safe & Secure Preschool Facilities — CSC Tiny Tech Guduvancheri",
+        },
+        {
+          property: "og:description",
+          content:
+            "Smart classrooms, 24/7 CCTV, GPS-tracked transport, on-call doctor & secure entry. Best facilities at Guduvancheri's top preschool.",
+        },
+        {
+          property: "og:url",
+          content: "https://www.tinytechplayschool.in/facilities",
+        },
+        {
+          property: "og:image",
+          content: "https://www.tinytechplayschool.in/tiny.png",
+        },
+        { property: "og:type", content: "website" },
+      ],
+      links: [
+        {
+          rel: "canonical",
+          href: "https://www.tinytechplayschool.in/facilities",
+        },
+      ],
+    }),
+    component: FacilitiesPage,
+  },
+);
 
 const safety = [
   { icon: Camera, title: "24/7 CCTV", desc: "Every classroom, hallway and play area is monitored." },

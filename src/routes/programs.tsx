@@ -4,15 +4,54 @@ import { PageHero } from "@/components/PageHero";
 import { ProgramsSection } from "@/components/sections/ProgramsSection";
 import { AfterSchoolSection } from "@/components/sections/AfterSchoolSection";
 
-export const Route = createFileRoute("/programs")({
-  head: () => ({
-    meta: [
-      { title: "Play School & Nursery School Programs in Guduvancheri | Montessori Teacher Training" },
-      { name: "description", content: "Play school, nursery school, kindergarten in Guduvancheri with IIT Delhi curriculum. Government approved Montessori teacher training course, abacus classes, spoken English classes, and CBSE tuition centre at CSC Tiny Tech Guduvancheri." },
-    ],
-  }),
-  component: ProgramsPage,
-});
+export const Route = createFileRoute("/programs")(
+  {
+    head: () => ({
+      meta: [
+        {
+          title:
+            "Play School & Nursery School Programs in Guduvancheri | Montessori Teacher Training",
+        },
+        {
+          name: "description",
+          content:
+            "Play school, nursery school, kindergarten in Guduvancheri with IIT Delhi curriculum. Government approved Montessori teacher training course, abacus classes, spoken English classes, and CBSE tuition centre at CSC Tiny Tech Guduvancheri.",
+        },
+        {
+          name: "keywords",
+          content:
+            "play school programs guduvancheri, nursery school guduvancheri, kindergarten guduvancheri, montessori teacher training guduvancheri, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri, preschool in vadakkupattu, kindergarten in chennai, IIT Delhi curriculum preschool, NEP 2020 preschool, activity based learning guduvancheri",
+        },
+        {
+          property: "og:title",
+          content:
+            "Play School & Nursery Programs — CSC Tiny Tech Guduvancheri",
+        },
+        {
+          property: "og:description",
+          content:
+            "Play Group, Nursery, Junior KG, Senior KG, Day Care & Montessori Teacher Training with IIT Delhi designed curriculum at CSC Tiny Tech Guduvancheri.",
+        },
+        {
+          property: "og:url",
+          content: "https://www.tinytechplayschool.in/programs",
+        },
+        {
+          property: "og:image",
+          content: "https://www.tinytechplayschool.in/tiny.png",
+        },
+        { property: "og:type", content: "website" },
+      ],
+      links: [
+        {
+          rel: "canonical",
+          href: "https://www.tinytechplayschool.in/programs",
+        },
+      ],
+    }),
+    component: ProgramsPage,
+  },
+);
 
 const details = [
   { name: "Play Group", age: "1.5 – 2.5 yrs", soft: "bg-soft-pink", color: "bg-brand-pink",

@@ -4,15 +4,54 @@ import { PageHero } from "@/components/PageHero";
 import { AdmissionStepsSection } from "@/components/sections/AdmissionStepsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
-export const Route = createFileRoute("/admissions")({
-  head: () => ({
-    meta: [
-      { title: "Preschool Admission Guduvancheri 2026 — Nursery, Junior KG & Day Care | CSC Tiny Tech" },
-      { name: "description", content: "Preschool admission Guduvancheri 2026 open! Nursery admission, junior KG admission, and affordable day care centre in Guduvancheri. Transparent fees, simple steps at CSC Tiny Tech — best preschool near SRM University & Guduvancheri Railway Station." },
-    ],
-  }),
-  component: AdmissionsPage,
-});
+export const Route = createFileRoute("/admissions")(
+  {
+    head: () => ({
+      meta: [
+        {
+          title:
+            "Preschool Admission Guduvancheri 2026 — Nursery, Junior KG & Day Care | CSC Tiny Tech",
+        },
+        {
+          name: "description",
+          content:
+            "Preschool admission Guduvancheri 2026 open! Nursery admission, junior KG admission, and affordable day care centre in Guduvancheri. Transparent fees, simple steps at CSC Tiny Tech — best preschool near SRM University & Guduvancheri Railway Station.",
+        },
+        {
+          name: "keywords",
+          content:
+            "preschool admission guduvancheri 2026, nursery admission guduvancheri, junior KG admission guduvancheri, senior KG admission guduvancheri, day care admission guduvancheri, preschool fees guduvancheri, kindergarten in chennai, playschool in vadakkupattu, preschool in vadakkupattu, best playschool near me, affordable preschool guduvancheri",
+        },
+        {
+          property: "og:title",
+          content:
+            "Preschool Admission 2026 — CSC Tiny Tech Guduvancheri",
+        },
+        {
+          property: "og:description",
+          content:
+            "Admissions open for 2026-27! Play Group, Nursery, Junior KG, Senior KG & Day Care. Transparent fees and simple process at the best preschool in Guduvancheri.",
+        },
+        {
+          property: "og:url",
+          content: "https://www.tinytechplayschool.in/admissions",
+        },
+        {
+          property: "og:image",
+          content: "https://www.tinytechplayschool.in/tiny.png",
+        },
+        { property: "og:type", content: "website" },
+      ],
+      links: [
+        {
+          rel: "canonical",
+          href: "https://www.tinytechplayschool.in/admissions",
+        },
+      ],
+    }),
+    component: AdmissionsPage,
+  },
+);
 
 const documents = [
   "Child's birth certificate",

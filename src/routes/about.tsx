@@ -3,15 +3,54 @@ import { PageLayout } from "@/components/PageLayout";
 import { PageHero } from "@/components/PageHero";
 import { AboutSection } from "@/components/sections/AboutSection";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Us — Best Preschool in Guduvancheri | CSC Tiny Tech Play School" },
-      { name: "description", content: "CSC Tiny Tech is the best preschool for kids in Guduvancheri. Learn about our IIT Delhi designed curriculum, Montessori preschool near Guduvancheri Railway Station, and our 15+ years of nurturing happy learners." },
-    ],
-  }),
-  component: AboutPage,
-});
+export const Route = createFileRoute("/about")(
+  {
+    head: () => ({
+      meta: [
+        {
+          title:
+            "About Us — Best Preschool in Guduvancheri | CSC Tiny Tech Play School",
+        },
+        {
+          name: "description",
+          content:
+            "CSC Tiny Tech is the best preschool for kids in Guduvancheri. Learn about our IIT Delhi designed curriculum, Montessori preschool near Guduvancheri Railway Station, and our 15+ years of nurturing happy learners.",
+        },
+        {
+          name: "keywords",
+          content:
+            "about CSC tiny tech, best preschool guduvancheri, preschool history guduvancheri, IIT Delhi curriculum preschool, NEP 2020 preschool guduvancheri, playschool in vadakkupattu, best playschool near me, early childhood education guduvancheri, montessori preschool guduvancheri",
+        },
+        {
+          property: "og:title",
+          content:
+            "About CSC Tiny Tech — Best Preschool in Guduvancheri",
+        },
+        {
+          property: "og:description",
+          content:
+            "15+ years of nurturing happy learners in Guduvancheri. IIT Delhi designed curriculum, NEP 2020 aligned. Best preschool near SRM University & Railway Station.",
+        },
+        {
+          property: "og:url",
+          content: "https://www.tinytechplayschool.in/about",
+        },
+        {
+          property: "og:image",
+          content: "https://www.tinytechplayschool.in/tiny.png",
+        },
+        { property: "og:type", content: "website" },
+      ],
+      links: [
+        {
+          rel: "canonical",
+          href: "https://www.tinytechplayschool.in/about",
+        },
+      ],
+    }),
+    component: AboutPage,
+  },
+);
 
 function AboutPage() {
   return (
