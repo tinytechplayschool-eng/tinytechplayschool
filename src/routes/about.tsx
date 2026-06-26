@@ -19,7 +19,7 @@ export const Route = createFileRoute("/about")(
         {
           name: "keywords",
           content:
-            "about CSC tiny tech, best preschool guduvancheri, preschool history guduvancheri, IIT Delhi curriculum preschool, NEP 2020 preschool guduvancheri, playschool in vadakkupattu, best playschool near me, early childhood education guduvancheri, montessori preschool guduvancheri",
+            "about CSC tiny tech, best preschool guduvancheri, preschool history guduvancheri, IIT Delhi curriculum preschool, NEP 2020 preschool guduvancheri, playschool in vadakkupattu, best playschool near me, early childhood education guduvancheri, montessori preschool guduvancheri, play school near me, preschool near me, preschool education",
         },
         {
           property: "og:title",

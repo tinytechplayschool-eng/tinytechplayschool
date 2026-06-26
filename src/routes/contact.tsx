@@ -19,7 +19,7 @@ export const Route = createFileRoute("/contact")(
         {
           name: "keywords",
           content:
-            "contact preschool guduvancheri, preschool phone number guduvancheri, book a tour preschool guduvancheri, preschool admission enquiry guduvancheri, day care in vadakkupattu, playschool in vadakkupattu, best playschool near me, CSC tiny tech contact, preschool near SRM university",
+            "contact preschool guduvancheri, preschool phone number guduvancheri, book a tour preschool guduvancheri, preschool admission enquiry guduvancheri, day care in vadakkupattu, playschool in vadakkupattu, best playschool near me, CSC tiny tech contact, preschool near SRM university, preschool teacher vacancy, preschool near me, play school near me",
         },
         {
           property: "og:title",

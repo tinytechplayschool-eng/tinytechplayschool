@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")(
         {
           name: "keywords",
           content:
-            "best preschool in guduvancheri, play school in guduvancheri, nursery school guduvancheri, day care centre guduvancheri, kindergarten guduvancheri, preschool admission guduvancheri 2026, playschool in vadakkupattu, preschool in vadakkupattu, day care in vadakkupattu, kindergarten in chennai, best playschool near me, preschool near SRM university, montessori preschool guduvancheri",
+            "best preschool in guduvancheri, play school in guduvancheri, nursery school guduvancheri, day care centre guduvancheri, kindergarten guduvancheri, preschool admission guduvancheri 2026, playschool in vadakkupattu, preschool in vadakkupattu, day care in vadakkupattu, kindergarten in chennai, best playschool near me, preschool near SRM university, montessori preschool guduvancheri, play school near me, preschool near me, preschool education",
         },
         {
           property: "og:title",

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/programs")(
         {
           name: "keywords",
           content:
-            "play school programs guduvancheri, nursery school guduvancheri, kindergarten guduvancheri, montessori teacher training guduvancheri, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri, preschool in vadakkupattu, kindergarten in chennai, IIT Delhi curriculum preschool, NEP 2020 preschool, activity based learning guduvancheri",
+            "play school programs guduvancheri, nursery school guduvancheri, kindergarten guduvancheri, montessori teacher training guduvancheri, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri, preschool in vadakkupattu, kindergarten in chennai, IIT Delhi curriculum preschool, NEP 2020 preschool, activity based learning guduvancheri, preschool teacher vacancy, cbse 10th tuition centre near me, preschool education",
         },
         {
           property: "og:title",

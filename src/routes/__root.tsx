@@ -87,7 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         {
           name: "keywords",
           content:
-            "best preschool in guduvancheri, play school in guduvancheri, nursery school in guduvancheri, day care centre in guduvancheri, kindergarten in guduvancheri, preschool admission guduvancheri 2026, montessori teacher training in guduvancheri, preschool near SRM university, montessori preschool near guduvancheri railway station, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri, playschool in vadakkupattu, preschool in vadakkupattu, day care in vadakkupattu, kindergarten in chennai, best playschool near me",
+            "best preschool in guduvancheri, play school in guduvancheri, nursery school in guduvancheri, day care centre in guduvancheri, kindergarten in guduvancheri, preschool admission guduvancheri 2026, montessori teacher training in guduvancheri, preschool near SRM university, montessori preschool near guduvancheri railway station, abacus classes guduvancheri, spoken english classes guduvancheri, CBSE tuition centre guduvancheri, playschool in vadakkupattu, preschool in vadakkupattu, day care in vadakkupattu, kindergarten in chennai, best playschool near me, play school near me, preschool near me, preschool education, preschool teacher vacancy, cbse 10th tuition centre near me",
         },
         { name: "robots", content: "index, follow" },
         { name: "author", content: "CSC Tiny Tech Pre School" },
